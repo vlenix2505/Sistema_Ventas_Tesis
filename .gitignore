@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Streamlit cache
+.streamlit/
+
+# Claude
+.claude/
+
+# Archivos grandes / binarios
+*.pkl
+*.joblib
+*.h5
+*.parquet
+
+# PDFs y Word (documentos externos)
+*.pdf
+*.docx
+
+# OS
+.DS_Store
+Thumbs.db

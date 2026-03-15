@@ -1,0 +1,325 @@
+# Manual de Uso — Sistema de Recomendación Híbrido
+
+---
+
+## 1. Requisitos Previos
+
+```bash
+# Python 3.10 o superior
+python --version
+
+# Instalar dependencias
+pip install -r requirements.txt
+```
+
+---
+
+## 2. Flujo Completo: de Cero a API
+
+### Paso 1 — Generar datos sintéticos
+
+```bash
+python generate_source.py
+```
+
+Genera en `data/raw/`:
+- `clientes.csv` — 800 clientes con rubro, subrubros y sede
+- `productos.csv` — 950 productos con precios, costos, stock y caducidad
+- `ventas.csv` — 7,950 transacciones de venta
+- `detalle_venta.csv` — 36,003 líneas de detalle (productos por venta)
+
+Tiempo estimado: < 30 segundos.
+
+### Paso 2 — Preparar el dataset de ML
+
+Abrir Jupyter y ejecutar el notebook:
+
+```bash
+jupyter notebook notebooks/01_dataset.ipynb
+```
+
+Ejecutar **todas las celdas en orden** (Kernel → Restart & Run All).
+
+Genera: `data/processed/dataset_ml.csv` (290,064 filas × 28 columnas).
+
+Tiempo estimado: 2-5 minutos.
+
+### Paso 3 — Entrenar el modelo
+
+```bash
+jupyter notebook notebooks/02_modelo_recomendacion.ipynb
+```
+
+Ejecutar **todas las celdas en orden**.
+
+Genera:
+- `models/recommender_model.joblib` — modelo serializado
+- `models/visualizaciones_modelo.png` — gráficas de evaluación
+
+Tiempo estimado: 3-8 minutos (SVD + cálculo de similitud coseno).
+
+### Paso 4 — Iniciar la API
+
+```bash
+# Desde la raíz del proyecto
+uvicorn api.main:app --reload --port 8000
+```
+
+La API carga el modelo automáticamente al arrancar.
+
+Verificar que está activa:
+```bash
+curl http://localhost:8000/health
+```
+
+Respuesta esperada:
+```json
+{
+  "status": "ok",
+  "modelo_cargado": true,
+  "n_clientes": 800,
+  "n_productos": 950,
+  "mensaje": "Servicio operativo."
+}
+```
+
+---
+
+## 3. Usar los Endpoints
+
+### Documentación interactiva
+
+Abrir en el navegador: `http://localhost:8000/docs`
+
+Permite probar cada endpoint directamente desde el navegador.
+
+### 3.1 Obtener un cliente_id válido
+
+Para probar, necesitas un `cliente_id` que exista en el dataset.
+Formato: `CLI_XXXXXX` (e.g., `CLI_000001`).
+
+Puedes obtener una lista de clientes ejecutando en Python:
+```python
+import pandas as pd
+df = pd.read_csv("data/processed/dataset_ml.csv")
+print(df["cliente_id"].unique()[:10])
+```
+
+### 3.2 Recomendación general
+
+```bash
+curl http://localhost:8000/recomendar/CLI_000001
+```
+
+Devuelve el top-10 de productos con mayor score híbrido para el cliente.
+Mezcla los tres tipos (urgentes, baja rotación, nuevos) según sus pesos.
+
+### 3.3 Productos próximos a vencer
+
+```bash
+# Con umbral por defecto (30 días)
+curl http://localhost:8000/recomendar/proximos-vencer/CLI_000001
+
+# Con umbral personalizado (7 días)
+curl "http://localhost:8000/recomendar/proximos-vencer/CLI_000001?umbral_dias=7"
+```
+
+**Cuándo usar este endpoint:**
+- En el carrito de compra, para ofrecer descuento en productos urgentes
+- En campañas de email diarias para clientes con alta afinidad a productos próximos a vencer
+- En el panel del encargado de almacén, para ver qué productos urgentes no se están moviendo
+
+**Interpretar la respuesta:**
+```json
+{
+  "tipo": "proximos_vencer",
+  "umbral_dias": 30,
+  "total_urgentes_catalogo": 41,
+  "top_k": 5,
+  "productos": [
+    {
+      "producto_id": "PROD_000234",
+      "dias_para_vencer": 7,
+      "score_urgency": 0.9234,
+      "score_cf": 0.8910,
+      "score_final": 0.7823,
+      "es_urgente": true
+    }
+  ]
+}
+```
+
+- `total_urgentes_catalogo = 41`: hay 41 productos urgentes en el catálogo
+- `top_k = 5`: se recomendaron 5 (puede ser menor si el cliente solo tiene afinidad con 5 urgentes disponibles en su sede)
+- `score_urgency = 0.9234`: producto muy urgente (solo 7 días)
+- `score_cf = 0.8910`: alta afinidad histórica del cliente con este producto
+- `score_final = 0.7823`: score combinado — el más alto de su lista
+
+### 3.4 Productos de baja rotación
+
+```bash
+curl http://localhost:8000/recomendar/baja-rotacion/CLI_000001
+```
+
+Devuelve productos con baja rotación (cuartil inferior de ventas diarias) que el
+cliente tiene mayor probabilidad de comprar.
+
+**Cuándo usar este endpoint:**
+- En visitas comerciales, para que el vendedor mencione productos que "no se mueven"
+- En bundles o promociones de volumen
+- Para gestión de inventario: identificar qué clientes podrían absorber el stock parado
+
+**Interpretar los campos:**
+- `rotacion_diaria`: cuántas unidades se venden por día (valores bajos = producto parado)
+- `score_rotation`: `1 - normalize(rotacion_diaria)`. Alto = muy poca rotación.
+- `umbral_rotacion_percentil: 0.25`: se incluyen los productos en el cuartil inferior
+
+### 3.5 Productos nuevos
+
+```bash
+# Con umbral por defecto (60 días)
+curl http://localhost:8000/recomendar/nuevos/CLI_000001
+
+# Más restrictivo: solo los últimos 30 días
+curl "http://localhost:8000/recomendar/nuevos/CLI_000001?umbral_dias_novedad=30"
+```
+
+Devuelve productos ingresados recientemente al catálogo, ordenados por afinidad.
+
+**Cuándo usar este endpoint:**
+- Para introducir nuevos SKUs al portafolio de clientes existentes
+- En comunicaciones de "novedades del mes"
+- Para medir la adopción de nuevos productos por cliente
+
+---
+
+## 4. Métricas del Modelo — Cómo Interpretarlas
+
+Las métricas se calculan en el notebook 02, sección "Evaluación del Modelo".
+
+### 4.1 Métricas estándar de recomendación
+
+| Métrica | Fórmula | Qué mide | Valor aceptable |
+|---|---|---|---|
+| **HitRate@10** | % de clientes donde el próximo producto está en top-10 | Capacidad predictiva básica | > 0.15 |
+| **Precision@10** | Relevantes en top-10 / 10 | Calidad de la lista | > 0.05 |
+| **Recall@10** | Relevantes encontrados / total relevantes | Cobertura del historial | > 0.05 |
+| **Coverage** | Productos únicos recomendados / catálogo total | Diversidad del sistema | > 0.50 |
+
+**Nota sobre valores bajos:** Con una densidad de matriz del 0.15% (muy sparse),
+HitRate@10 = 0.15 ya es un buen resultado. Un sistema aleatorio daría ~0.01.
+
+### 4.2 Métricas de negocio (las más importantes para la tesis)
+
+| Métrica | Qué mide | Valor aceptable |
+|---|---|---|
+| **Urgency Coverage** | % de productos urgentes que se recomiendan a algún cliente | > 0.50 |
+| **Rotation Coverage** | % de productos baja rotación que se recomiendan | > 0.40 |
+
+**Urgency Coverage** es la métrica más importante: si el sistema tiene
+Urgency Coverage = 0.80, significa que el 80% de los productos próximos a vencer
+están siendo recomendados activamente a clientes con afinidad, lo que maximiza
+la probabilidad de reducir la merma.
+
+### 4.3 Análisis de sensibilidad
+
+El notebook compara 4 escenarios de pesos:
+
+| Escenario | CF | CBF | Urgency | Rotation | Novelty | Cuándo usarlo |
+|---|---|---|---|---|---|---|
+| **Baseline** | 0.40 | 0.15 | 0.20 | 0.15 | 0.10 | Operación normal |
+| **Prioridad caducidad** | 0.30 | 0.10 | 0.45 | 0.10 | 0.05 | Alto inventario próximo a vencer |
+| **Prioridad baja rotación** | 0.30 | 0.10 | 0.10 | 0.45 | 0.05 | Stock parado crítico |
+| **Solo CF (ablación)** | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 | Benchmark de referencia |
+
+Si Urgency Coverage con "Prioridad caducidad" es mucho mayor que con "Baseline",
+conviene ajustar los pesos según la temporada o la situación del inventario.
+
+---
+
+## 5. ¿Cómo Saber si el Modelo Está Funcionando Correctamente?
+
+### Checklist de validación
+
+| Verificación | Comando | Resultado esperado |
+|---|---|---|
+| Dataset generado | `wc -l data/raw/clientes.csv` | 801 líneas (800 + header) |
+| Dataset ML listo | `python -c "import pandas as pd; df=pd.read_csv('data/processed/dataset_ml.csv'); print(df.shape, df.isnull().sum().sum())"` | `(290064, 28) 0` |
+| API activa | `curl localhost:8000/health` | `"status": "ok"` |
+| Modelo cargado | Revisar logs de uvicorn | `Modelo listo. Clientes: 800 | Productos: 950` |
+
+### Señales de que algo está mal
+
+| Síntoma | Causa probable | Solución |
+|---|---|---|
+| `404 Cliente no encontrado` | cliente_id inválido | Verificar formato `CLI_XXXXXX` |
+| `503 Modelo no disponible` | dataset_ml.csv no existe | Ejecutar notebook 01 primero |
+| Urgency Coverage = 0 | No hay productos urgentes | Verificar que `dias_para_vencer` tiene valores ≤ 30 en el dataset |
+| Todos los endpoints devuelven [] | Problema con filtros de stock | Verificar que `stock > 0` en el maestro de productos |
+| Notebook 01 falla en join | Bug de sede cross-join | Verificar que el join usa la columna correcta (ver Sección 3 del notebook) |
+
+### Interpretar el log de arranque
+
+```
+INFO  api.main — Iniciando servidor — cargando modelo desde data/processed/dataset_ml.csv
+INFO  api.recommender — Dataset cargado: 290064 filas, 800 clientes, 950 productos
+INFO  api.recommender — Matriz R: 800 clientes × 950 productos  |  43876 interacciones únicas
+INFO  api.recommender — SVD: 150 componentes  |  varianza explicada: 63.45%
+INFO  api.recommender — CBF: matriz de similitud 950 × 950
+INFO  api.recommender — Productos urgentes (score_urgency > 0.3): 41
+INFO  api.recommender — Productos nuevos   (score_novelty  > 0.5): 237
+INFO  api.recommender — Baja rotación      (score_rotation > 0.75): 250
+INFO  api.main — Modelo listo.  Clientes: 800  |  Productos: 950
+```
+
+- **Varianza explicada ≥ 60%**: el SVD captura bien el comportamiento de compra
+- **Interacciones únicas ~44K**: densidad de ~5.8% (antes del ajuste por recencia)
+- **41 productos urgentes**: número razonable para un catálogo de 950 productos
+
+---
+
+## 6. Variables Configurables
+
+Las siguientes constantes en `api/recommender.py` permiten ajustar el comportamiento
+sin reentrenar el modelo:
+
+```python
+# Pesos del score híbrido (deben sumar 1.0)
+W_CF        = 0.40
+W_CBF       = 0.15
+W_URGENCY   = 0.20
+W_ROTATION  = 0.15
+W_NOVELTY   = 0.10
+
+# Umbrales de clasificación
+UMBRAL_URGENCIA = 30   # días para considerar "urgente"
+UMBRAL_NOVEDAD  = 60   # días para considerar "nuevo"
+
+# Parámetros del modelo
+SVD_COMPONENTS     = 150   # dimensión latente (más → más memoria, más precisión)
+TOPK_CF_CANDIDATES = 500   # candidatos pre-filtrados por CF
+TAU_DIAS           = 180   # vida media del decaimiento de recencia (días)
+TAU_NOVEDAD        = 30    # vida media del decaimiento de novedad (días)
+SIGMA_URGENCY      = 15    # pendiente de la sigmoide de urgencia
+```
+
+**Para cambiar los umbrales sin redeployar**, usa los query params de la API:
+```bash
+# Umbral de urgencia más estricto: solo productos a 7 días o menos
+curl "http://localhost:8000/recomendar/proximos-vencer/CLI_000001?umbral_dias=7"
+```
+
+---
+
+## 7. Regenerar los Notebooks
+
+Si necesitas cambiar el código del notebook 02 y regenerar el archivo `.ipynb`:
+
+```bash
+cd notebooks/
+python build_nb.py
+```
+
+Esto sobreescribe `02_modelo_recomendacion.ipynb` con el código actualizado en
+`build_nb.py`. Es el método recomendado para mantener el notebook bajo control
+de versiones sin conflictos de formato JSON.
