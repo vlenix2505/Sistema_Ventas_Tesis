@@ -1,801 +1,801 @@
 cliente_id,rubro_cliente,subrubro_1,subrubro_2,sede_cliente
-CLI_721175,Bar,Karaoke,Presencial,Cusco
-CLI_250165,Restaurante,Chifa,Salón,Piura
-CLI_808631,Bodega,Mixta,Autoservicio,Arequipa
-CLI_086875,Panadería,Artesanal,Distribución,Cusco
-CLI_868570,Panadería,Integral,Distribución,Piura
-CLI_834813,Cafetería,Tradicional,Para Llevar,Arequipa
-CLI_617139,Fast Food,Wraps,Salón,Piura
-CLI_203229,Bar,Cocteles,Presencial,Arequipa
-CLI_861175,Minimarket,Express,24 Horas,Cusco
-CLI_295001,Ferretería,Industrial,Autoservicio,Piura
-CLI_039598,Bar,Cervecería,Presencial + Eventos,Lima
-CLI_652614,Bar,Lounge,Presencial,Cusco
-CLI_751685,Restaurante,Marino,Dark Kitchen,Piura
-CLI_575030,Supermercado,Gourmet,Tienda Física,Arequipa
-CLI_250789,Cafetería,Moderna,Salón,Piura
-CLI_156997,Supermercado,Mayorista,Solo Online,Piura
-CLI_964512,Fast Food,Pizza,Salón + Delivery,Arequipa
-CLI_220629,Restaurante,Buffet,Dark Kitchen,Arequipa
-CLI_245785,Panadería,Integral,Local Propio,Piura
-CLI_063480,Bodega,Licorería,Mostrador,Lima
-CLI_811511,Restaurante,Japonés,Para Llevar,Cusco
-CLI_880650,Minimarket,Barrio,24 Horas,Lima
-CLI_424039,Minimarket,24 Horas,24 Horas,Arequipa
-CLI_677641,Bodega,Abarrotes,Autoservicio,Piura
-CLI_030495,Restaurante,Buffet,Dark Kitchen,Lima
-CLI_008495,Farmacia,Independiente,Mostrador,Lima
-CLI_653263,Ferretería,General,Autoservicio,Arequipa
-CLI_649906,Catering,Matrimonios,Mixto,Lima
-CLI_513022,Panadería,Integral,Local Propio,Cusco
-CLI_985659,Farmacia,Naturista,Drive-Thru,Lima
-CLI_871223,Supermercado,Gourmet,Tienda Física,Arequipa
-CLI_980420,Farmacia,Homeopática,Autoservicio,Piura
-CLI_754008,Bar,Cocteles,Presencial,Piura
-CLI_511387,Farmacia,Independiente,Autoservicio,Lima
-CLI_635897,Hotel,Business,Desayuno Incluido,Piura
-CLI_073988,Supermercado,Formato Mediano,Online + Tienda,Piura
-CLI_304193,Cafetería,Moderna,Salón,Piura
-CLI_138926,Minimarket,Barrio,Tienda + Delivery,Cusco
-CLI_308259,Bar,Pub,Presencial + Eventos,Lima
-CLI_374918,Panadería,Integral,Distribución,Piura
-CLI_095776,Cafetería,Tradicional,Salón + Delivery,Arequipa
-CLI_966195,Catering,Eventos Corporativos,Mixto,Cusco
-CLI_516371,Hotel,Resort,Solo Alojamiento,Arequipa
-CLI_327634,Catering,Social,On-Site,Piura
-CLI_105638,Farmacia,Homeopática,Drive-Thru,Piura
-CLI_810967,Bar,Cocteles,Presencial,Cusco
-CLI_733168,Catering,Social,On-Site,Lima
-CLI_864591,Catering,Matrimonios,On-Site,Piura
-CLI_598675,Bodega,Mixta,Mostrador + Delivery,Cusco
-CLI_226756,Supermercado,Mayorista,Online + Tienda,Arequipa
-CLI_223512,Bodega,Barrio,Mostrador + Delivery,Piura
-CLI_434083,Fast Food,Pollo,Salón,Lima
-CLI_037894,Ferretería,Industrial,Autoservicio,Piura
-CLI_403641,Bodega,Mayorista,Autoservicio,Cusco
-CLI_035061,Supermercado,Orgánico,Solo Online,Cusco
-CLI_323737,Supermercado,Formato Grande,Online + Tienda,Cusco
-CLI_059367,Cafetería,Tradicional,Salón + Delivery,Lima
-CLI_862419,Restaurante,Carnes,Delivery,Cusco
-CLI_167189,Fast Food,Pizza,Delivery,Lima
-CLI_593915,Ferretería,General,Autoservicio,Piura
-CLI_861973,Panadería,Repostería,Distribución,Cusco
-CLI_538819,Bar,Cocteles,Presencial,Cusco
-CLI_156697,Fast Food,Pollo,Salón + Delivery,Cusco
-CLI_329247,Catering,Social,Off-Site,Cusco
-CLI_812738,Hotel,Boutique,Todo Incluido,Arequipa
-CLI_907476,Farmacia,Independiente,Drive-Thru,Cusco
-CLI_242635,Bodega,Barrio,Mostrador,Arequipa
-CLI_343273,Catering,Social,Off-Site,Piura
-CLI_479521,Minimarket,24 Horas,Tienda + Delivery,Piura
-CLI_105295,Cafetería,Moderna,Co-Working,Piura
-CLI_102439,Bar,Pub,Reservas,Arequipa
-CLI_406015,Bodega,Barrio,Mostrador,Arequipa
-CLI_545673,Panadería,Industrial,Local Propio,Cusco
-CLI_366792,Cafetería,Especialidad,Salón + Delivery,Piura
-CLI_251464,Cafetería,Tradicional,Para Llevar,Lima
-CLI_280227,Minimarket,Gasolinera,Tienda + Delivery,Piura
-CLI_212107,Catering,Eventos Corporativos,Mixto,Arequipa
-CLI_669540,Bodega,Barrio,Autoservicio,Lima
-CLI_209859,Catering,Escolar,Mixto,Arequipa
-CLI_469156,Ferretería,General,Mostrador,Cusco
-CLI_431144,Panadería,Francesa,Distribución,Cusco
-CLI_021788,Farmacia,Independiente,Autoservicio,Lima
-CLI_405644,Bar,Pub,Presencial + Eventos,Lima
-CLI_128406,Minimarket,Gasolinera,Tienda + Delivery,Piura
-CLI_550994,Fast Food,Pollo,Delivery,Lima
-CLI_475289,Bar,Pub,Presencial,Piura
-CLI_395882,Bodega,Mixta,Mostrador,Cusco
-CLI_822594,Hotel,Hostal,Solo Alojamiento,Piura
-CLI_355431,Bodega,Mixta,Autoservicio,Piura
-CLI_843493,Ferretería,Industrial,Mostrador,Piura
-CLI_558845,Bodega,Barrio,Mostrador,Cusco
-CLI_890726,Restaurante,Criollo,Delivery + Salón,Cusco
-CLI_883377,Bar,Karaoke,Reservas,Lima
-CLI_699740,Ferretería,General,Mostrador,Lima
-CLI_203034,Bodega,Mayorista,Mostrador + Delivery,Piura
-CLI_611636,Farmacia,Homeopática,Drive-Thru,Cusco
-CLI_422089,Ferretería,Especializada,Mostrador,Piura
-CLI_929643,Panadería,Francesa,Distribución,Cusco
-CLI_332608,Bodega,Barrio,Mostrador,Cusco
-CLI_978972,Cafetería,Tradicional,Salón,Arequipa
-CLI_277610,Minimarket,24 Horas,Tienda + Delivery,Lima
-CLI_570271,Cafetería,Saludable,Salón,Piura
-CLI_521999,Farmacia,Naturista,Drive-Thru,Arequipa
-CLI_840726,Fast Food,Árabe,Delivery,Cusco
+CLI_227680,Panadería,Artesanal,Local + Distribución,Cusco
+CLI_265774,Restaurante,Pollería,Delivery,Cusco
+CLI_631930,Panadería,Artesanal,Local Propio,Lima
+CLI_204190,Minimarket,Gasolinera,Tienda + Delivery,Arequipa
+CLI_570220,Hotel,Hostal,Solo Alojamiento,Piura
+CLI_481367,Hotel,Resort,Solo Alojamiento,Lima
+CLI_713965,Panadería,Industrial,Local + Distribución,Arequipa
+CLI_884095,Hotel,Boutique,Desayuno Incluido,Arequipa
+CLI_861175,Bodega,Licorería,Autoservicio,Cusco
+CLI_295001,Catering,Industrial,Off-Site,Piura
+CLI_039598,Supermercado,Mayorista,Solo Online,Lima
+CLI_732107,Cafetería,Tradicional,Co-Working,Arequipa
+CLI_982661,Farmacia,Cadena,Drive-Thru,Piura
+CLI_954139,Fast Food,Árabe,Solo Delivery,Arequipa
+CLI_904077,Bodega,Mayorista,Mostrador + Delivery,Piura
+CLI_284257,Panadería,Integral,Local Propio,Piura
+CLI_451235,Cafetería,Saludable,Co-Working,Piura
+CLI_700035,Panadería,Artesanal,Local Propio,Arequipa
+CLI_785244,Cafetería,Moderna,Para Llevar,Lima
+CLI_447690,Restaurante,Japonés,Para Llevar,Cusco
+CLI_151148,Cafetería,Tradicional,Para Llevar,Lima
+CLI_098998,Minimarket,Universitario,Tienda Física,Piura
+CLI_891039,Minimarket,Express,Tienda Física,Cusco
+CLI_712955,Bodega,Mixta,Mostrador + Delivery,Arequipa
+CLI_581901,Restaurante,Buffet,Delivery + Salón,Lima
+CLI_182564,Cafetería,Moderna,Salón + Delivery,Arequipa
+CLI_723623,Bar,Sports Bar,Presencial + Eventos,Lima
+CLI_902298,Restaurante,Buffet,Dark Kitchen,Piura
+CLI_876960,Minimarket,24 Horas,24 Horas,Arequipa
+CLI_287122,Bar,Karaoke,Presencial,Arequipa
+CLI_498042,Bodega,Abarrotes,Mostrador + Delivery,Lima
+CLI_914751,Bodega,Mayorista,Mostrador + Delivery,Piura
+CLI_511387,Fast Food,Árabe,Delivery,Lima
+CLI_217846,Catering,Matrimonios,Mixto,Piura
+CLI_988073,Bar,Sports Bar,Presencial,Cusco
+CLI_173041,Supermercado,Formato Mediano,Online + Tienda,Cusco
+CLI_013892,Bodega,Mayorista,Mostrador,Cusco
+CLI_919192,Cafetería,Especialidad,Co-Working,Lima
+CLI_749181,Panadería,Pastelería,Local + Distribución,Lima
+CLI_306338,Cafetería,Tradicional,Para Llevar,Arequipa
+CLI_365163,Fast Food,Wraps,Salón + Delivery,Piura
+CLI_502456,Panadería,Pastelería,Distribución,Cusco
+CLI_497105,Minimarket,24 Horas,Tienda + Delivery,Arequipa
+CLI_210248,Restaurante,Carnes,Para Llevar,Lima
+CLI_733168,Minimarket,Universitario,Tienda Física,Lima
+CLI_864591,Supermercado,Formato Mediano,Tienda Física,Piura
+CLI_598675,Supermercado,Orgánico,Solo Online,Cusco
+CLI_226756,Catering,Industrial,Off-Site,Arequipa
+CLI_235126,Minimarket,Gasolinera,Tienda Física,Piura
+CLI_542495,Restaurante,Japonés,Para Llevar,Lima
+CLI_492388,Hotel,Hostal,Todo Incluido,Piura
+CLI_436778,Fast Food,Pizza,Salón + Delivery,Piura
+CLI_560481,Ferretería,General,Autoservicio,Arequipa
+CLI_373782,Minimarket,24 Horas,24 Horas,Lima
+CLI_936767,Minimarket,Universitario,Tienda Física,Piura
+CLI_116526,Restaurante,Chifa,Dark Kitchen,Arequipa
+CLI_713595,Restaurante,Buffet,Salón,Cusco
+CLI_582636,Minimarket,24 Horas,Tienda Física,Lima
+CLI_343538,Supermercado,Orgánico,Tienda Física,Cusco
+CLI_747928,Restaurante,Italiano,Delivery + Salón,Cusco
+CLI_329247,Minimarket,Universitario,24 Horas,Cusco
+CLI_127387,Bodega,Licorería,Autoservicio,Arequipa
+CLI_074766,Fast Food,Sándwiches,Drive-Thru,Cusco
+CLI_242635,Minimarket,Barrio,Tienda Física,Arequipa
+CLI_343273,Minimarket,Universitario,24 Horas,Piura
+CLI_795211,Restaurante,Vegetariano,Para Llevar,Piura
+CLI_710029,Minimarket,Gasolinera,Tienda Física,Cusco
+CLI_243928,Restaurante,Chifa,Dark Kitchen,Lima
+CLI_060153,Hotel,Resort,Todo Incluido,Piura
+CLI_567392,Restaurante,Japonés,Dark Kitchen,Cusco
+CLI_679226,Bodega,Mixta,Mostrador,Piura
+CLI_146402,Bodega,Mixta,Mostrador,Arequipa
+CLI_697669,Cafetería,Saludable,Salón,Cusco
+CLI_980137,Restaurante,Carnes,Delivery,Arequipa
+CLI_342545,Minimarket,Express,Tienda + Delivery,Cusco
+CLI_026850,Cafetería,Especialidad,Co-Working,Arequipa
+CLI_469156,Fast Food,Árabe,Drive-Thru,Cusco
+CLI_431144,Farmacia,Homeopática,Autoservicio,Cusco
+CLI_433945,Hotel,Hostal,Restaurante Propio,Lima
+CLI_413767,Panadería,Integral,Distribución,Piura
+CLI_461962,Bodega,Mayorista,Autoservicio,Piura
+CLI_428196,Bodega,Barrio,Mostrador + Delivery,Piura
+CLI_528925,Fast Food,Wraps,Delivery,Cusco
+CLI_710783,Restaurante,Buffet,Dark Kitchen,Arequipa
+CLI_856844,Hotel,Turístico,Solo Alojamiento,Arequipa
+CLI_431652,Fast Food,Sándwiches,Salón + Delivery,Cusco
+CLI_368940,Restaurante,Vegetariano,Delivery + Salón,Arequipa
+CLI_547461,Hotel,Resort,Restaurante Propio,Cusco
+CLI_630365,Supermercado,Gourmet,Online + Tienda,Arequipa
+CLI_006997,Panadería,Francesa,Local + Distribución,Cusco
+CLI_120303,Farmacia,Independiente,Autoservicio,Cusco
+CLI_571086,Restaurante,Fusión,Delivery + Salón,Piura
+CLI_264684,Fast Food,Sándwiches,Drive-Thru,Arequipa
+CLI_435642,Cafetería,Moderna,Salón,Arequipa
+CLI_133260,Restaurante,Japonés,Delivery + Salón,Cusco
+CLI_799789,Bodega,Mixta,Mostrador + Delivery,Piura
+CLI_666768,Panadería,Pastelería,Local Propio,Lima
+CLI_703193,Catering,Eventos Corporativos,Off-Site,Cusco
+CLI_835219,Restaurante,Criollo,Dark Kitchen,Cusco
+CLI_884072,Farmacia,Naturista,Drive-Thru,Cusco
 CLI_705466,Farmacia,Naturista,Mostrador,Cusco
-CLI_646936,Bar,Cocteles,Presencial,Lima
-CLI_934193,Bar,Pub,Reservas,Cusco
-CLI_814679,Panadería,Artesanal,Local Propio,Cusco
-CLI_686926,Ferretería,Especializada,Autoservicio,Piura
-CLI_806593,Bodega,Licorería,Mostrador,Cusco
-CLI_980269,Cafetería,Moderna,Salón,Lima
-CLI_728558,Hotel,Business,Desayuno Incluido,Piura
-CLI_299571,Hotel,Business,Restaurante Propio,Lima
-CLI_723107,Supermercado,Formato Grande,Online + Tienda,Lima
-CLI_435426,Fast Food,Hamburguesas,Salón + Delivery,Arequipa
-CLI_984174,Bodega,Barrio,Mostrador,Lima
-CLI_026539,Hotel,Hostal,Desayuno Incluido,Arequipa
-CLI_471685,Bodega,Mixta,Mostrador + Delivery,Piura
-CLI_483733,Catering,Industrial,On-Site,Arequipa
-CLI_080078,Hotel,Business,Todo Incluido,Lima
-CLI_136787,Ferretería,Mayorista,Catálogo Online,Arequipa
-CLI_151483,Ferretería,Mayorista,Autoservicio,Arequipa
-CLI_245766,Panadería,Pastelería,Local + Distribución,Lima
-CLI_173308,Ferretería,Mayorista,Mostrador,Cusco
-CLI_607243,Panadería,Industrial,Local + Distribución,Arequipa
-CLI_817004,Cafetería,Temática,Salón,Cusco
-CLI_425316,Bodega,Mixta,Autoservicio,Cusco
-CLI_290297,Farmacia,Naturista,Mostrador,Arequipa
-CLI_071375,Cafetería,Temática,Salón,Arequipa
-CLI_009855,Panadería,Francesa,Local + Distribución,Cusco
-CLI_038689,Cafetería,Tradicional,Salón + Delivery,Lima
-CLI_440872,Catering,Eventos Corporativos,On-Site,Piura
-CLI_159378,Panadería,Integral,Local + Distribución,Piura
-CLI_211709,Minimarket,Barrio,Tienda Física,Cusco
-CLI_495668,Bodega,Mixta,Mostrador + Delivery,Arequipa
-CLI_467530,Supermercado,Mayorista,Tienda Física,Cusco
-CLI_326905,Bodega,Barrio,Mostrador,Cusco
-CLI_970951,Bodega,Mixta,Mostrador + Delivery,Cusco
-CLI_488906,Farmacia,Cadena,Mostrador,Lima
-CLI_563937,Minimarket,Express,24 Horas,Lima
-CLI_006276,Bar,Lounge,Reservas,Piura
-CLI_936617,Hotel,Boutique,Desayuno Incluido,Lima
-CLI_631799,Cafetería,Especialidad,Salón + Delivery,Lima
-CLI_503937,Bar,Lounge,Reservas,Piura
-CLI_081788,Minimarket,24 Horas,Tienda Física,Lima
-CLI_131878,Bar,Cocteles,Presencial + Eventos,Piura
-CLI_462427,Fast Food,Tacos,Salón,Cusco
-CLI_384839,Minimarket,Universitario,Tienda Física,Cusco
-CLI_541168,Bodega,Abarrotes,Autoservicio,Lima
-CLI_518827,Bar,Cervecería,Reservas,Arequipa
-CLI_809889,Bodega,Mixta,Mostrador,Cusco
-CLI_330230,Restaurante,Japonés,Dark Kitchen,Arequipa
-CLI_286174,Supermercado,Formato Mediano,Tienda Física,Lima
-CLI_219647,Panadería,Artesanal,Distribución,Piura
-CLI_266084,Cafetería,Tradicional,Salón,Lima
-CLI_214624,Bar,Vinos,Presencial + Eventos,Lima
-CLI_957508,Farmacia,Naturista,Mostrador,Lima
-CLI_207376,Bar,Cervecería,Reservas,Arequipa
-CLI_581746,Supermercado,Formato Grande,Online + Tienda,Piura
-CLI_742010,Supermercado,Formato Grande,Solo Online,Arequipa
-CLI_406280,Farmacia,Homeopática,Drive-Thru,Arequipa
-CLI_444931,Cafetería,Tradicional,Co-Working,Cusco
-CLI_870685,Hotel,Hostal,Solo Alojamiento,Arequipa
-CLI_636463,Panadería,Artesanal,Distribución,Lima
-CLI_646706,Fast Food,Árabe,Delivery,Cusco
-CLI_916700,Hotel,Hostal,Desayuno Incluido,Arequipa
-CLI_669375,Hotel,Resort,Restaurante Propio,Arequipa
-CLI_290159,Catering,Escolar,Mixto,Lima
-CLI_266921,Cafetería,Temática,Salón + Delivery,Lima
-CLI_406833,Bodega,Mayorista,Mostrador + Delivery,Lima
-CLI_879675,Farmacia,Naturista,Autoservicio,Lima
-CLI_705385,Minimarket,24 Horas,Tienda Física,Lima
-CLI_975780,Panadería,Pastelería,Distribución,Arequipa
-CLI_451855,Bar,Karaoke,Reservas,Piura
-CLI_853192,Catering,Social,On-Site,Arequipa
-CLI_651355,Panadería,Pastelería,Local Propio,Piura
-CLI_676858,Ferretería,Especializada,Mostrador,Lima
-CLI_722560,Panadería,Artesanal,Local + Distribución,Arequipa
-CLI_284461,Bar,Cocteles,Reservas,Cusco
-CLI_318393,Bodega,Licorería,Mostrador,Cusco
-CLI_534220,Supermercado,Gourmet,Solo Online,Arequipa
-CLI_281353,Catering,Social,Off-Site,Piura
-CLI_430959,Bodega,Mixta,Autoservicio,Piura
-CLI_048645,Ferretería,Mayorista,Mostrador,Lima
-CLI_773451,Catering,Matrimonios,Off-Site,Arequipa
-CLI_458661,Panadería,Francesa,Local + Distribución,Lima
-CLI_531640,Catering,Escolar,Off-Site,Lima
-CLI_518193,Supermercado,Gourmet,Online + Tienda,Cusco
-CLI_385728,Ferretería,Mayorista,Catálogo Online,Arequipa
-CLI_957760,Hotel,Apart-hotel,Restaurante Propio,Cusco
-CLI_751668,Cafetería,Especialidad,Para Llevar,Piura
-CLI_571444,Bar,Sports Bar,Presencial,Piura
-CLI_987012,Catering,Social,Mixto,Arequipa
-CLI_394556,Bar,Cervecería,Presencial + Eventos,Arequipa
-CLI_922997,Ferretería,Industrial,Mostrador,Piura
-CLI_339721,Fast Food,Wraps,Salón + Delivery,Cusco
-CLI_227342,Catering,Escolar,On-Site,Cusco
-CLI_252172,Minimarket,24 Horas,Tienda + Delivery,Lima
-CLI_604717,Bar,Vinos,Presencial,Lima
-CLI_684672,Farmacia,Cadena,Autoservicio,Arequipa
-CLI_627809,Bar,Karaoke,Presencial,Cusco
-CLI_717820,Supermercado,Formato Grande,Online + Tienda,Arequipa
-CLI_295498,Ferretería,General,Autoservicio,Cusco
-CLI_376703,Cafetería,Moderna,Salón,Arequipa
-CLI_664434,Ferretería,Especializada,Mostrador,Lima
-CLI_322279,Supermercado,Formato Mediano,Online + Tienda,Arequipa
-CLI_660134,Ferretería,General,Autoservicio,Arequipa
-CLI_329449,Fast Food,Hamburguesas,Delivery,Arequipa
-CLI_788765,Catering,Social,Off-Site,Lima
-CLI_705055,Farmacia,Homeopática,Drive-Thru,Piura
-CLI_467484,Supermercado,Gourmet,Solo Online,Lima
-CLI_455630,Bodega,Mayorista,Mostrador + Delivery,Arequipa
-CLI_047508,Restaurante,Carnes,Dark Kitchen,Cusco
-CLI_116793,Restaurante,Marino,Delivery + Salón,Cusco
-CLI_098181,Bodega,Licorería,Autoservicio,Cusco
-CLI_987947,Farmacia,Cadena,Drive-Thru,Cusco
-CLI_232971,Farmacia,Homeopática,Mostrador,Cusco
-CLI_210570,Ferretería,General,Mostrador,Lima
-CLI_577192,Catering,Industrial,On-Site,Arequipa
-CLI_316230,Ferretería,Mayorista,Mostrador,Piura
-CLI_503635,Bar,Lounge,Reservas,Cusco
-CLI_374837,Catering,Matrimonios,Off-Site,Cusco
-CLI_951226,Restaurante,Fusión,Delivery + Salón,Cusco
+CLI_646936,Hotel,Turístico,Restaurante Propio,Lima
+CLI_341934,Panadería,Francesa,Local + Distribución,Lima
+CLI_339655,Bodega,Mixta,Mostrador,Piura
+CLI_692624,Catering,Eventos Corporativos,Off-Site,Piura
+CLI_593311,Hotel,Boutique,Solo Alojamiento,Cusco
+CLI_903972,Restaurante,Carnes,Dark Kitchen,Piura
+CLI_775299,Panadería,Industrial,Distribución,Arequipa
+CLI_813750,Supermercado,Formato Grande,Solo Online,Arequipa
+CLI_104354,Restaurante,Japonés,Dark Kitchen,Piura
+CLI_785490,Bar,Karaoke,Presencial + Eventos,Cusco
+CLI_490060,Hotel,Resort,Restaurante Propio,Arequipa
+CLI_735254,Panadería,Integral,Local + Distribución,Lima
+CLI_484837,Hotel,Apart-hotel,Desayuno Incluido,Arequipa
+CLI_964004,Minimarket,Gasolinera,24 Horas,Arequipa
+CLI_553136,Hotel,Hostal,Restaurante Propio,Cusco
+CLI_963526,Hotel,Apart-hotel,Restaurante Propio,Piura
+CLI_122457,Hotel,Turístico,Solo Alojamiento,Lima
+CLI_217330,Panadería,Repostería,Local + Distribución,Piura
+CLI_160724,Fast Food,Tacos,Salón,Arequipa
+CLI_750016,Restaurante,Marino,Para Llevar,Lima
+CLI_642531,Bodega,Licorería,Autoservicio,Cusco
+CLI_290297,Fast Food,Pizza,Salón,Arequipa
+CLI_441525,Bodega,Barrio,Mostrador,Arequipa
+CLI_098557,Restaurante,Chifa,Delivery + Salón,Cusco
+CLI_919463,Bodega,Licorería,Mostrador,Cusco
+CLI_553333,Hotel,Business,Todo Incluido,Piura
+CLI_593788,Restaurante,Pollería,Dark Kitchen,Piura
+CLI_117096,Restaurante,Marino,Delivery,Cusco
+CLI_686939,Supermercado,Orgánico,Online + Tienda,Arequipa
+CLI_432053,Restaurante,Pollería,Delivery + Salón,Cusco
+CLI_088654,Restaurante,Italiano,Para Llevar,Lima
+CLI_165948,Minimarket,Universitario,Tienda + Delivery,Arequipa
+CLI_607956,Ferretería,General,Catálogo Online,Arequipa
+CLI_435760,Minimarket,Gasolinera,24 Horas,Lima
+CLI_289610,Fast Food,Tacos,Delivery,Piura
+CLI_635933,Catering,Escolar,Mixto,Arequipa
+CLI_643312,Hotel,Apart-hotel,Restaurante Propio,Cusco
+CLI_081788,Restaurante,Criollo,Delivery,Lima
+CLI_511669,Cafetería,Especialidad,Para Llevar,Cusco
+CLI_967722,Restaurante,Italiano,Delivery,Cusco
+CLI_654775,Catering,Matrimonios,Off-Site,Cusco
+CLI_126851,Farmacia,Cadena,Drive-Thru,Lima
+CLI_458098,Bodega,Mayorista,Autoservicio,Arequipa
+CLI_333023,Bar,Cervecería,Presencial,Lima
+CLI_712861,Hotel,Apart-hotel,Solo Alojamiento,Cusco
+CLI_021964,Minimarket,Barrio,Tienda Física,Arequipa
+CLI_266084,Bodega,Barrio,Mostrador,Lima
+CLI_720351,Panadería,Integral,Local Propio,Lima
+CLI_957508,Fast Food,Pizza,Salón,Lima
+CLI_730261,Panadería,Pastelería,Distribución,Arequipa
+CLI_368694,Restaurante,Italiano,Dark Kitchen,Piura
+CLI_027833,Hotel,Boutique,Todo Incluido,Cusco
+CLI_062806,Ferretería,Industrial,Autoservicio,Arequipa
+CLI_878394,Restaurante,Italiano,Delivery + Salón,Cusco
+CLI_870685,Minimarket,Universitario,24 Horas,Arequipa
+CLI_364630,Restaurante,Italiano,Para Llevar,Arequipa
+CLI_670645,Panadería,Francesa,Distribución,Piura
+CLI_641263,Bar,Sports Bar,Presencial + Eventos,Lima
+CLI_937553,Panadería,Repostería,Distribución,Arequipa
+CLI_743522,Bodega,Barrio,Mostrador,Cusco
+CLI_692101,Bodega,Mixta,Autoservicio,Cusco
+CLI_305887,Ferretería,Mayorista,Catálogo Online,Piura
+CLI_121705,Supermercado,Orgánico,Tienda Física,Arequipa
+CLI_603975,Minimarket,Universitario,Tienda Física,Cusco
+CLI_964638,Hotel,Boutique,Desayuno Incluido,Piura
+CLI_588531,Supermercado,Formato Mediano,Online + Tienda,Piura
+CLI_826513,Bodega,Mixta,Autoservicio,Lima
+CLI_916768,Fast Food,Pollo,Solo Delivery,Lima
+CLI_065674,Hotel,Boutique,Restaurante Propio,Lima
+CLI_294862,Fast Food,Wraps,Solo Delivery,Lima
+CLI_443183,Cafetería,Moderna,Salón + Delivery,Arequipa
+CLI_512141,Farmacia,Cadena,Autoservicio,Lima
+CLI_499897,Bodega,Licorería,Mostrador + Delivery,Piura
+CLI_484034,Supermercado,Mayorista,Solo Online,Piura
+CLI_048645,Bodega,Abarrotes,Mostrador,Lima
+CLI_340053,Minimarket,Gasolinera,Tienda + Delivery,Arequipa
+CLI_729619,Restaurante,Fusión,Delivery + Salón,Cusco
+CLI_971550,Minimarket,Gasolinera,Tienda + Delivery,Piura
+CLI_181933,Cafetería,Saludable,Salón + Delivery,Arequipa
+CLI_572836,Panadería,Integral,Local + Distribución,Cusco
+CLI_652695,Panadería,Repostería,Local + Distribución,Piura
+CLI_166816,Cafetería,Especialidad,Salón + Delivery,Lima
+CLI_144425,Fast Food,Wraps,Salón,Cusco
+CLI_123653,Catering,Eventos Corporativos,Mixto,Piura
+CLI_568682,Minimarket,Universitario,24 Horas,Cusco
+CLI_529222,Restaurante,Carnes,Para Llevar,Cusco
+CLI_972163,Bodega,Abarrotes,Mostrador + Delivery,Cusco
+CLI_090967,Hotel,Business,Solo Alojamiento,Piura
+CLI_961652,Bodega,Mixta,Autoservicio,Piura
+CLI_471705,Panadería,Artesanal,Local Propio,Piura
+CLI_672207,Minimarket,Express,24 Horas,Piura
+CLI_918199,Fast Food,Wraps,Salón,Cusco
+CLI_998051,Supermercado,Formato Mediano,Solo Online,Arequipa
+CLI_498411,Bodega,Mixta,Mostrador + Delivery,Piura
+CLI_032616,Cafetería,Temática,Para Llevar,Cusco
+CLI_061132,Hotel,Hostal,Solo Alojamiento,Arequipa
+CLI_937066,Minimarket,Express,24 Horas,Lima
+CLI_169876,Cafetería,Saludable,Co-Working,Arequipa
+CLI_944937,Minimarket,24 Horas,Tienda Física,Cusco
+CLI_657553,Supermercado,Formato Mediano,Tienda Física,Lima
+CLI_251846,Restaurante,Fusión,Dark Kitchen,Cusco
+CLI_845404,Restaurante,Fusión,Delivery + Salón,Arequipa
+CLI_875030,Cafetería,Saludable,Co-Working,Lima
+CLI_047796,Bar,Karaoke,Reservas,Cusco
+CLI_893665,Minimarket,Express,24 Horas,Arequipa
+CLI_572002,Restaurante,Fusión,Delivery + Salón,Cusco
+CLI_232971,Fast Food,Árabe,Drive-Thru,Cusco
+CLI_210570,Panadería,Artesanal,Local Propio,Lima
+CLI_280528,Minimarket,24 Horas,Tienda + Delivery,Arequipa
+CLI_289542,Fast Food,Árabe,Delivery,Piura
+CLI_499673,Panadería,Francesa,Local + Distribución,Cusco
+CLI_152281,Minimarket,Gasolinera,24 Horas,Cusco
+CLI_951226,Catering,Social,Off-Site,Cusco
 CLI_036008,Hotel,Boutique,Desayuno Incluido,Piura
-CLI_392177,Bodega,Mayorista,Autoservicio,Cusco
-CLI_295735,Minimarket,Universitario,Tienda + Delivery,Arequipa
-CLI_540948,Cafetería,Temática,Co-Working,Piura
-CLI_087055,Hotel,Turístico,Todo Incluido,Cusco
-CLI_338466,Cafetería,Moderna,Para Llevar,Arequipa
-CLI_171749,Bodega,Licorería,Autoservicio,Lima
-CLI_967482,Farmacia,Independiente,Mostrador,Piura
-CLI_406996,Restaurante,Carnes,Dark Kitchen,Lima
-CLI_407525,Restaurante,Fusión,Dark Kitchen,Cusco
-CLI_526237,Supermercado,Formato Grande,Tienda Física,Lima
-CLI_592686,Hotel,Resort,Todo Incluido,Lima
-CLI_346708,Panadería,Francesa,Distribución,Arequipa
-CLI_929652,Ferretería,General,Catálogo Online,Lima
-CLI_509395,Bar,Cocteles,Presencial + Eventos,Cusco
-CLI_558653,Panadería,Pastelería,Local Propio,Piura
-CLI_590483,Fast Food,Wraps,Salón,Cusco
-CLI_742531,Hotel,Boutique,Solo Alojamiento,Cusco
-CLI_770176,Panadería,Integral,Distribución,Cusco
-CLI_094710,Hotel,Turístico,Restaurante Propio,Cusco
-CLI_510557,Bodega,Mixta,Mostrador + Delivery,Cusco
-CLI_309995,Restaurante,Marino,Delivery + Salón,Piura
-CLI_134044,Bar,Cervecería,Presencial,Cusco
-CLI_974641,Panadería,Pastelería,Distribución,Lima
-CLI_384486,Catering,Escolar,Mixto,Piura
-CLI_413376,Cafetería,Temática,Para Llevar,Piura
-CLI_831555,Hotel,Resort,Solo Alojamiento,Lima
-CLI_426874,Fast Food,Tacos,Drive-Thru,Cusco
-CLI_214345,Supermercado,Gourmet,Tienda Física,Cusco
-CLI_097859,Farmacia,Homeopática,Drive-Thru,Lima
-CLI_609637,Minimarket,Gasolinera,Tienda Física,Cusco
-CLI_255554,Panadería,Artesanal,Local Propio,Cusco
-CLI_530149,Bodega,Mixta,Mostrador + Delivery,Lima
-CLI_342444,Fast Food,Pollo,Delivery,Cusco
-CLI_070318,Hotel,Boutique,Solo Alojamiento,Piura
-CLI_159241,Farmacia,Cadena,Drive-Thru,Cusco
-CLI_615372,Catering,Eventos Corporativos,Mixto,Lima
-CLI_134285,Ferretería,General,Catálogo Online,Arequipa
-CLI_313416,Ferretería,Industrial,Catálogo Online,Arequipa
-CLI_113165,Ferretería,General,Catálogo Online,Cusco
-CLI_316669,Ferretería,Especializada,Catálogo Online,Piura
-CLI_186894,Bodega,Abarrotes,Mostrador,Piura
-CLI_644741,Catering,Social,Mixto,Lima
-CLI_251477,Minimarket,Gasolinera,Tienda Física,Lima
-CLI_783807,Ferretería,General,Autoservicio,Piura
-CLI_872943,Catering,Eventos Corporativos,Mixto,Lima
-CLI_276864,Bodega,Barrio,Mostrador,Piura
-CLI_555192,Minimarket,24 Horas,Tienda Física,Arequipa
-CLI_979981,Farmacia,Independiente,Mostrador,Piura
-CLI_328316,Minimarket,24 Horas,Tienda + Delivery,Cusco
-CLI_680529,Catering,Industrial,On-Site,Arequipa
-CLI_588096,Bodega,Licorería,Autoservicio,Arequipa
-CLI_242283,Panadería,Integral,Distribución,Piura
-CLI_870680,Ferretería,Industrial,Autoservicio,Piura
-CLI_949983,Bodega,Licorería,Mostrador,Arequipa
-CLI_239133,Panadería,Repostería,Distribución,Piura
-CLI_020554,Catering,Eventos Corporativos,Mixto,Lima
-CLI_941037,Fast Food,Pizza,Salón,Lima
-CLI_817719,Panadería,Pastelería,Distribución,Piura
-CLI_064761,Panadería,Integral,Local + Distribución,Cusco
-CLI_017539,Ferretería,Industrial,Mostrador,Arequipa
-CLI_626729,Supermercado,Formato Mediano,Online + Tienda,Lima
-CLI_557208,Bar,Cocteles,Presencial,Piura
-CLI_260803,Bodega,Licorería,Mostrador,Arequipa
-CLI_451490,Supermercado,Mayorista,Solo Online,Lima
-CLI_007565,Restaurante,Marino,Delivery,Cusco
-CLI_651009,Catering,Industrial,On-Site,Piura
-CLI_576634,Farmacia,Naturista,Autoservicio,Piura
-CLI_916066,Restaurante,Carnes,Salón,Piura
-CLI_104358,Panadería,Artesanal,Local + Distribución,Arequipa
-CLI_787183,Supermercado,Gourmet,Tienda Física,Cusco
-CLI_296450,Cafetería,Especialidad,Salón,Piura
-CLI_786170,Hotel,Business,Solo Alojamiento,Lima
-CLI_391908,Minimarket,Barrio,24 Horas,Cusco
-CLI_472035,Minimarket,Gasolinera,Tienda Física,Lima
-CLI_990428,Supermercado,Formato Mediano,Solo Online,Arequipa
-CLI_025364,Panadería,Integral,Distribución,Cusco
-CLI_190566,Minimarket,Universitario,Tienda Física,Lima
-CLI_871524,Hotel,Boutique,Todo Incluido,Lima
-CLI_028484,Supermercado,Gourmet,Tienda Física,Lima
-CLI_180549,Ferretería,General,Catálogo Online,Piura
-CLI_938342,Cafetería,Temática,Co-Working,Piura
-CLI_114459,Supermercado,Orgánico,Tienda Física,Piura
-CLI_211686,Bodega,Abarrotes,Autoservicio,Lima
-CLI_023562,Minimarket,Gasolinera,Tienda Física,Piura
-CLI_550171,Restaurante,Japonés,Delivery + Salón,Lima
-CLI_836652,Minimarket,24 Horas,Tienda Física,Lima
-CLI_941983,Restaurante,Pollería,Delivery,Lima
-CLI_947434,Bodega,Barrio,Mostrador,Arequipa
+CLI_909919,Minimarket,Gasolinera,24 Horas,Cusco
+CLI_295735,Catering,Social,Mixto,Arequipa
+CLI_848773,Bodega,Abarrotes,Mostrador + Delivery,Piura
+CLI_521295,Minimarket,Express,Tienda Física,Cusco
+CLI_252593,Bodega,Mayorista,Autoservicio,Cusco
+CLI_171749,Farmacia,Homeopática,Autoservicio,Lima
+CLI_967482,Fast Food,Árabe,Salón,Piura
+CLI_366644,Restaurante,Fusión,Delivery + Salón,Lima
+CLI_075256,Fast Food,Tacos,Salón,Cusco
+CLI_952623,Supermercado,Formato Mediano,Tienda Física,Cusco
+CLI_592686,Restaurante,Japonés,Delivery + Salón,Lima
+CLI_500144,Restaurante,Japonés,Delivery + Salón,Arequipa
+CLI_892965,Fast Food,Árabe,Salón,Arequipa
+CLI_850939,Restaurante,Pollería,Para Llevar,Piura
+CLI_255865,Supermercado,Mayorista,Tienda Física,Cusco
+CLI_759048,Supermercado,Formato Mediano,Solo Online,Arequipa
+CLI_370294,Panadería,Integral,Local + Distribución,Arequipa
+CLI_153722,Fast Food,Tacos,Salón + Delivery,Lima
+CLI_767310,Restaurante,Criollo,Delivery + Salón,Arequipa
+CLI_114540,Minimarket,Gasolinera,Tienda Física,Arequipa
+CLI_780477,Fast Food,Sándwiches,Solo Delivery,Piura
+CLI_122112,Fast Food,Pollo,Salón + Delivery,Arequipa
+CLI_226511,Fast Food,Hamburguesas,Delivery,Arequipa
+CLI_838448,Restaurante,Japonés,Para Llevar,Piura
+CLI_239926,Bodega,Mixta,Mostrador + Delivery,Cusco
+CLI_383155,Farmacia,Cadena,Autoservicio,Piura
+CLI_947426,Cafetería,Especialidad,Salón,Cusco
+CLI_267709,Cafetería,Moderna,Co-Working,Cusco
+CLI_984097,Panadería,Integral,Local + Distribución,Lima
+CLI_165669,Restaurante,Carnes,Para Llevar,Arequipa
+CLI_025555,Farmacia,Homeopática,Mostrador,Cusco
+CLI_553014,Minimarket,Express,Tienda + Delivery,Lima
+CLI_342444,Restaurante,Criollo,Para Llevar,Cusco
+CLI_818661,Bodega,Abarrotes,Mostrador,Piura
+CLI_344761,Fast Food,Sándwiches,Drive-Thru,Cusco
+CLI_440227,Minimarket,Universitario,Tienda Física,Lima
+CLI_134285,Fast Food,Árabe,Solo Delivery,Arequipa
+CLI_538687,Panadería,Integral,Distribución,Arequipa
+CLI_632131,Catering,Social,On-Site,Cusco
+CLI_316669,Minimarket,24 Horas,Tienda + Delivery,Piura
+CLI_340301,Fast Food,Pollo,Drive-Thru,Cusco
+CLI_648400,Farmacia,Homeopática,Autoservicio,Piura
+CLI_514775,Bodega,Abarrotes,Mostrador,Lima
+CLI_838075,Fast Food,Pizza,Solo Delivery,Cusco
+CLI_802808,Restaurante,Carnes,Para Llevar,Lima
+CLI_853761,Supermercado,Formato Mediano,Tienda Física,Piura
+CLI_555192,Supermercado,Formato Mediano,Tienda Física,Arequipa
+CLI_817402,Bar,Vinos,Presencial + Eventos,Piura
+CLI_132831,Cafetería,Moderna,Para Llevar,Arequipa
+CLI_077476,Panadería,Francesa,Distribución,Arequipa
+CLI_588096,Minimarket,Express,24 Horas,Arequipa
+CLI_242283,Hotel,Hostal,Todo Incluido,Piura
+CLI_870680,Fast Food,Tacos,Delivery,Piura
+CLI_261619,Minimarket,Barrio,24 Horas,Arequipa
+CLI_066067,Restaurante,Italiano,Para Llevar,Piura
+CLI_020554,Minimarket,Barrio,Tienda + Delivery,Lima
+CLI_642081,Cafetería,Tradicional,Salón + Delivery,Arequipa
+CLI_771915,Catering,Matrimonios,Off-Site,Lima
+CLI_327964,Panadería,Industrial,Distribución,Piura
+CLI_753931,Restaurante,Pollería,Delivery,Arequipa
+CLI_672908,Panadería,Industrial,Local + Distribución,Arequipa
+CLI_136772,Bodega,Mixta,Mostrador + Delivery,Cusco
+CLI_080333,Restaurante,Vegetariano,Dark Kitchen,Cusco
+CLI_970020,Minimarket,24 Horas,24 Horas,Lima
+CLI_277446,Bar,Cervecería,Presencial + Eventos,Piura
+CLI_528536,Bodega,Abarrotes,Mostrador,Lima
+CLI_922916,Bodega,Licorería,Mostrador + Delivery,Lima
+CLI_010435,Bodega,Mayorista,Mostrador,Arequipa
+CLI_718345,Restaurante,Criollo,Para Llevar,Arequipa
+CLI_450811,Cafetería,Especialidad,Salón,Lima
+CLI_708003,Catering,Eventos Corporativos,On-Site,Piura
+CLI_876229,Restaurante,Chifa,Dark Kitchen,Arequipa
+CLI_359189,Bodega,Barrio,Mostrador + Delivery,Cusco
+CLI_730432,Restaurante,Vegetariano,Para Llevar,Arequipa
+CLI_399775,Cafetería,Moderna,Salón + Delivery,Piura
+CLI_238890,Restaurante,Japonés,Salón,Cusco
+CLI_152409,Hotel,Apart-hotel,Solo Alojamiento,Arequipa
+CLI_484755,Restaurante,Carnes,Dark Kitchen,Cusco
+CLI_492238,Restaurante,Buffet,Salón,Arequipa
+CLI_027511,Bodega,Abarrotes,Mostrador,Cusco
+CLI_374480,Bodega,Barrio,Mostrador + Delivery,Arequipa
+CLI_281793,Hotel,Apart-hotel,Restaurante Propio,Lima
+CLI_044724,Cafetería,Temática,Para Llevar,Piura
+CLI_183665,Restaurante,Chifa,Delivery,Arequipa
+CLI_916808,Catering,Eventos Corporativos,On-Site,Arequipa
+CLI_158306,Restaurante,Vegetariano,Salón,Piura
 CLI_280622,Minimarket,24 Horas,24 Horas,Cusco
-CLI_034672,Farmacia,Homeopática,Mostrador,Lima
-CLI_549531,Catering,Escolar,Off-Site,Arequipa
-CLI_870957,Ferretería,Especializada,Mostrador,Piura
-CLI_628909,Supermercado,Formato Grande,Tienda Física,Piura
-CLI_991237,Ferretería,Industrial,Autoservicio,Arequipa
-CLI_795519,Ferretería,General,Catálogo Online,Cusco
-CLI_402250,Farmacia,Naturista,Mostrador,Piura
-CLI_188017,Supermercado,Gourmet,Solo Online,Piura
-CLI_939313,Panadería,Integral,Distribución,Piura
-CLI_961969,Supermercado,Mayorista,Solo Online,Arequipa
-CLI_372107,Minimarket,Universitario,Tienda Física,Cusco
-CLI_699259,Ferretería,General,Mostrador,Piura
-CLI_291807,Hotel,Apart-hotel,Restaurante Propio,Arequipa
-CLI_263770,Bodega,Barrio,Autoservicio,Cusco
-CLI_843514,Fast Food,Tacos,Drive-Thru,Piura
-CLI_700213,Supermercado,Mayorista,Tienda Física,Cusco
-CLI_993987,Supermercado,Formato Grande,Solo Online,Cusco
-CLI_811216,Bar,Sports Bar,Presencial + Eventos,Arequipa
-CLI_205813,Bar,Cocteles,Reservas,Cusco
-CLI_640269,Panadería,Pastelería,Local + Distribución,Cusco
-CLI_482633,Panadería,Pastelería,Distribución,Cusco
-CLI_042851,Hotel,Business,Todo Incluido,Lima
-CLI_847203,Panadería,Repostería,Distribución,Cusco
-CLI_840975,Farmacia,Homeopática,Drive-Thru,Piura
-CLI_912100,Panadería,Francesa,Local Propio,Cusco
-CLI_299033,Minimarket,24 Horas,Tienda + Delivery,Arequipa
-CLI_907571,Cafetería,Especialidad,Salón + Delivery,Piura
-CLI_591177,Supermercado,Orgánico,Solo Online,Arequipa
+CLI_034672,Catering,Industrial,On-Site,Lima
+CLI_549531,Ferretería,Mayorista,Autoservicio,Arequipa
+CLI_095799,Panadería,Artesanal,Distribución,Lima
+CLI_577795,Bodega,Mayorista,Autoservicio,Cusco
+CLI_237357,Minimarket,24 Horas,Tienda Física,Arequipa
+CLI_519843,Bar,Vinos,Presencial,Cusco
+CLI_604368,Restaurante,Chifa,Delivery,Arequipa
+CLI_059788,Cafetería,Temática,Salón,Lima
+CLI_131197,Minimarket,Express,Tienda + Delivery,Cusco
+CLI_969725,Panadería,Industrial,Local + Distribución,Piura
+CLI_107587,Minimarket,Gasolinera,Tienda Física,Lima
+CLI_259172,Restaurante,Italiano,Dark Kitchen,Arequipa
+CLI_422021,Restaurante,Pollería,Para Llevar,Lima
+CLI_984351,Restaurante,Vegetariano,Delivery + Salón,Cusco
+CLI_724700,Supermercado,Orgánico,Solo Online,Arequipa
+CLI_137580,Bar,Karaoke,Reservas,Cusco
+CLI_640394,Cafetería,Saludable,Para Llevar,Arequipa
+CLI_035400,Cafetería,Temática,Para Llevar,Lima
+CLI_101208,Bodega,Mixta,Autoservicio,Arequipa
+CLI_826333,Supermercado,Mayorista,Online + Tienda,Piura
+CLI_422076,Minimarket,Gasolinera,24 Horas,Lima
+CLI_955884,Cafetería,Especialidad,Salón + Delivery,Cusco
+CLI_238055,Fast Food,Pollo,Salón + Delivery,Piura
+CLI_912100,Restaurante,Vegetariano,Delivery,Cusco
+CLI_299033,Bodega,Mayorista,Mostrador + Delivery,Arequipa
+CLI_907571,Hotel,Hostal,Todo Incluido,Piura
+CLI_799512,Restaurante,Buffet,Dark Kitchen,Arequipa
 CLI_654146,Catering,Escolar,Off-Site,Cusco
-CLI_604233,Restaurante,Japonés,Para Llevar,Arequipa
-CLI_869237,Cafetería,Temática,Salón + Delivery,Arequipa
-CLI_128778,Cafetería,Saludable,Salón,Lima
-CLI_351880,Farmacia,Cadena,Mostrador,Piura
-CLI_003134,Minimarket,Barrio,Tienda Física,Cusco
-CLI_035185,Bar,Karaoke,Presencial + Eventos,Arequipa
-CLI_762315,Hotel,Business,Solo Alojamiento,Piura
-CLI_265896,Minimarket,24 Horas,Tienda + Delivery,Cusco
-CLI_826977,Supermercado,Formato Mediano,Solo Online,Arequipa
-CLI_423565,Catering,Industrial,Off-Site,Lima
-CLI_662109,Farmacia,Naturista,Drive-Thru,Arequipa
-CLI_152088,Cafetería,Temática,Co-Working,Cusco
-CLI_104294,Bar,Cocteles,Presencial + Eventos,Lima
-CLI_725796,Ferretería,Especializada,Autoservicio,Arequipa
-CLI_247759,Supermercado,Orgánico,Tienda Física,Arequipa
-CLI_373732,Bar,Karaoke,Presencial,Arequipa
-CLI_065641,Bodega,Barrio,Autoservicio,Lima
-CLI_208124,Bar,Cervecería,Presencial + Eventos,Cusco
-CLI_103930,Supermercado,Gourmet,Solo Online,Cusco
-CLI_517714,Cafetería,Moderna,Para Llevar,Cusco
-CLI_301303,Catering,Industrial,Off-Site,Piura
-CLI_283153,Restaurante,Chifa,Delivery,Lima
-CLI_455461,Restaurante,Marino,Para Llevar,Cusco
-CLI_994271,Hotel,Business,Desayuno Incluido,Lima
-CLI_360825,Ferretería,Especializada,Mostrador,Lima
-CLI_180141,Ferretería,General,Catálogo Online,Arequipa
-CLI_663662,Bodega,Mayorista,Mostrador,Piura
-CLI_711111,Catering,Eventos Corporativos,Mixto,Arequipa
-CLI_720429,Farmacia,Cadena,Autoservicio,Arequipa
-CLI_698610,Minimarket,Barrio,Tienda Física,Lima
-CLI_964920,Fast Food,Wraps,Salón,Piura
-CLI_837070,Restaurante,Marino,Para Llevar,Piura
-CLI_389273,Bar,Lounge,Presencial,Arequipa
-CLI_448644,Supermercado,Formato Grande,Online + Tienda,Piura
-CLI_798194,Panadería,Industrial,Local + Distribución,Cusco
-CLI_768878,Supermercado,Orgánico,Online + Tienda,Cusco
-CLI_406085,Bodega,Barrio,Autoservicio,Piura
-CLI_566474,Bar,Pub,Reservas,Cusco
-CLI_061888,Supermercado,Orgánico,Solo Online,Lima
-CLI_325538,Bodega,Abarrotes,Mostrador,Lima
-CLI_484146,Bodega,Licorería,Mostrador + Delivery,Lima
-CLI_500663,Catering,Industrial,On-Site,Piura
-CLI_930245,Bar,Lounge,Reservas,Cusco
-CLI_717238,Fast Food,Wraps,Delivery,Arequipa
-CLI_184874,Farmacia,Naturista,Drive-Thru,Arequipa
-CLI_182813,Ferretería,Especializada,Mostrador,Cusco
-CLI_746914,Restaurante,Buffet,Salón,Lima
-CLI_459157,Farmacia,Homeopática,Drive-Thru,Piura
-CLI_685399,Panadería,Francesa,Local + Distribución,Piura
-CLI_941477,Cafetería,Saludable,Co-Working,Arequipa
-CLI_796262,Fast Food,Sándwiches,Delivery,Arequipa
-CLI_695631,Bar,Sports Bar,Presencial + Eventos,Arequipa
-CLI_564782,Farmacia,Homeopática,Drive-Thru,Cusco
-CLI_016171,Restaurante,Fusión,Salón,Arequipa
-CLI_862708,Bar,Cocteles,Presencial,Lima
-CLI_635766,Ferretería,Especializada,Catálogo Online,Lima
-CLI_993502,Catering,Industrial,Off-Site,Cusco
-CLI_567921,Minimarket,Gasolinera,Tienda + Delivery,Lima
-CLI_534515,Supermercado,Formato Mediano,Solo Online,Arequipa
-CLI_711309,Restaurante,Italiano,Delivery + Salón,Arequipa
-CLI_373210,Bodega,Mixta,Mostrador + Delivery,Piura
-CLI_438632,Catering,Social,Mixto,Cusco
-CLI_649669,Farmacia,Independiente,Mostrador,Arequipa
-CLI_270575,Catering,Eventos Corporativos,Off-Site,Cusco
-CLI_815919,Bodega,Barrio,Autoservicio,Lima
-CLI_678415,Bar,Karaoke,Presencial,Cusco
-CLI_714300,Bar,Pub,Presencial,Arequipa
-CLI_894443,Farmacia,Independiente,Drive-Thru,Cusco
-CLI_070708,Bar,Karaoke,Presencial + Eventos,Arequipa
-CLI_730743,Farmacia,Independiente,Autoservicio,Lima
-CLI_277826,Bodega,Mayorista,Mostrador + Delivery,Arequipa
-CLI_690810,Bar,Pub,Presencial + Eventos,Cusco
-CLI_277298,Farmacia,Independiente,Autoservicio,Piura
-CLI_621650,Supermercado,Formato Mediano,Tienda Física,Cusco
-CLI_200743,Bar,Vinos,Presencial,Piura
-CLI_169346,Bar,Lounge,Presencial,Arequipa
-CLI_533402,Fast Food,Sándwiches,Drive-Thru,Piura
-CLI_236344,Fast Food,Wraps,Salón + Delivery,Arequipa
-CLI_168815,Bodega,Mixta,Mostrador,Arequipa
-CLI_788685,Fast Food,Wraps,Salón,Piura
-CLI_594732,Restaurante,Fusión,Para Llevar,Arequipa
-CLI_535688,Supermercado,Mayorista,Solo Online,Piura
-CLI_155817,Farmacia,Cadena,Autoservicio,Arequipa
-CLI_222657,Restaurante,Carnes,Delivery + Salón,Cusco
-CLI_061962,Bodega,Licorería,Mostrador,Arequipa
-CLI_636853,Ferretería,Especializada,Autoservicio,Piura
-CLI_837808,Farmacia,Homeopática,Autoservicio,Cusco
-CLI_521168,Supermercado,Formato Mediano,Tienda Física,Piura
-CLI_164564,Catering,Escolar,Mixto,Piura
-CLI_515811,Restaurante,Criollo,Dark Kitchen,Piura
-CLI_968789,Farmacia,Homeopática,Drive-Thru,Piura
-CLI_818678,Bodega,Mixta,Autoservicio,Piura
-CLI_734523,Ferretería,Mayorista,Mostrador,Lima
-CLI_854104,Restaurante,Carnes,Dark Kitchen,Lima
-CLI_416887,Farmacia,Independiente,Mostrador,Cusco
-CLI_864947,Farmacia,Homeopática,Autoservicio,Arequipa
-CLI_142828,Ferretería,General,Autoservicio,Cusco
-CLI_775106,Cafetería,Moderna,Salón,Arequipa
-CLI_162843,Catering,Escolar,On-Site,Arequipa
-CLI_474352,Bar,Cervecería,Presencial,Arequipa
-CLI_318127,Ferretería,Mayorista,Catálogo Online,Piura
-CLI_435671,Panadería,Industrial,Local + Distribución,Lima
-CLI_940200,Panadería,Industrial,Distribución,Cusco
-CLI_575986,Catering,Social,Mixto,Cusco
-CLI_205521,Restaurante,Carnes,Dark Kitchen,Lima
-CLI_902364,Hotel,Business,Restaurante Propio,Piura
-CLI_795755,Farmacia,Independiente,Drive-Thru,Arequipa
-CLI_440155,Cafetería,Moderna,Para Llevar,Arequipa
-CLI_885695,Hotel,Boutique,Solo Alojamiento,Piura
-CLI_884237,Hotel,Resort,Todo Incluido,Piura
-CLI_843572,Bar,Lounge,Presencial,Arequipa
-CLI_735132,Panadería,Francesa,Local + Distribución,Arequipa
-CLI_722228,Supermercado,Formato Mediano,Online + Tienda,Arequipa
-CLI_966675,Supermercado,Formato Grande,Tienda Física,Lima
-CLI_388521,Bodega,Abarrotes,Mostrador + Delivery,Arequipa
-CLI_154903,Catering,Matrimonios,Mixto,Piura
-CLI_530631,Bodega,Barrio,Mostrador + Delivery,Arequipa
-CLI_524634,Ferretería,Mayorista,Mostrador,Piura
-CLI_821152,Catering,Escolar,Off-Site,Lima
-CLI_581874,Fast Food,Pizza,Drive-Thru,Lima
-CLI_186534,Supermercado,Mayorista,Online + Tienda,Arequipa
-CLI_012280,Farmacia,Independiente,Autoservicio,Arequipa
-CLI_592018,Cafetería,Temática,Co-Working,Piura
-CLI_364783,Ferretería,Especializada,Autoservicio,Arequipa
-CLI_694649,Bodega,Mayorista,Mostrador,Lima
-CLI_367638,Supermercado,Gourmet,Tienda Física,Arequipa
-CLI_941076,Fast Food,Sándwiches,Solo Delivery,Lima
-CLI_108503,Minimarket,24 Horas,24 Horas,Lima
-CLI_168322,Panadería,Pastelería,Local + Distribución,Piura
-CLI_068349,Supermercado,Orgánico,Tienda Física,Arequipa
-CLI_961566,Farmacia,Homeopática,Mostrador,Cusco
-CLI_420341,Farmacia,Naturista,Autoservicio,Lima
-CLI_340994,Restaurante,Fusión,Delivery,Lima
-CLI_203453,Catering,Escolar,Mixto,Piura
-CLI_820657,Fast Food,Wraps,Salón + Delivery,Arequipa
-CLI_481266,Cafetería,Especialidad,Co-Working,Arequipa
-CLI_100511,Fast Food,Sándwiches,Salón + Delivery,Arequipa
-CLI_000247,Supermercado,Mayorista,Solo Online,Cusco
-CLI_389070,Hotel,Resort,Restaurante Propio,Cusco
-CLI_881727,Supermercado,Formato Mediano,Online + Tienda,Cusco
-CLI_475946,Minimarket,Barrio,Tienda Física,Arequipa
-CLI_751423,Hotel,Business,Restaurante Propio,Lima
-CLI_240753,Bar,Sports Bar,Presencial,Piura
-CLI_745301,Restaurante,Chifa,Dark Kitchen,Lima
-CLI_996067,Bar,Vinos,Reservas,Lima
-CLI_356387,Supermercado,Mayorista,Tienda Física,Lima
-CLI_720755,Fast Food,Tacos,Delivery,Cusco
-CLI_534858,Minimarket,Universitario,Tienda Física,Piura
-CLI_485475,Panadería,Integral,Local Propio,Piura
-CLI_727653,Restaurante,Buffet,Para Llevar,Cusco
-CLI_243060,Farmacia,Cadena,Drive-Thru,Piura
-CLI_110634,Supermercado,Formato Grande,Tienda Física,Arequipa
-CLI_609248,Restaurante,Italiano,Delivery,Lima
-CLI_594378,Bodega,Barrio,Autoservicio,Arequipa
-CLI_039907,Farmacia,Independiente,Drive-Thru,Cusco
-CLI_659557,Minimarket,24 Horas,Tienda + Delivery,Arequipa
-CLI_681143,Bar,Cervecería,Presencial + Eventos,Piura
-CLI_959846,Farmacia,Homeopática,Autoservicio,Arequipa
-CLI_535734,Ferretería,Especializada,Catálogo Online,Cusco
-CLI_559332,Restaurante,Chifa,Para Llevar,Arequipa
-CLI_555041,Restaurante,Marino,Dark Kitchen,Arequipa
-CLI_280397,Hotel,Hostal,Desayuno Incluido,Arequipa
-CLI_865953,Bodega,Mayorista,Autoservicio,Cusco
-CLI_384882,Panadería,Artesanal,Distribución,Lima
-CLI_330515,Bar,Pub,Presencial + Eventos,Piura
-CLI_734552,Supermercado,Formato Grande,Solo Online,Arequipa
-CLI_347523,Catering,Matrimonios,On-Site,Cusco
-CLI_413559,Fast Food,Pollo,Drive-Thru,Piura
-CLI_739064,Minimarket,Barrio,24 Horas,Arequipa
-CLI_503969,Minimarket,Gasolinera,24 Horas,Cusco
-CLI_081378,Ferretería,Especializada,Autoservicio,Lima
-CLI_998806,Fast Food,Hamburguesas,Drive-Thru,Lima
-CLI_025252,Cafetería,Saludable,Salón + Delivery,Cusco
-CLI_605601,Ferretería,Especializada,Catálogo Online,Arequipa
-CLI_060328,Minimarket,Universitario,24 Horas,Arequipa
-CLI_862390,Panadería,Artesanal,Distribución,Arequipa
-CLI_019570,Bodega,Mixta,Mostrador + Delivery,Arequipa
-CLI_706339,Hotel,Resort,Todo Incluido,Arequipa
-CLI_880521,Restaurante,Marino,Delivery + Salón,Cusco
-CLI_756864,Bar,Sports Bar,Presencial,Piura
-CLI_352158,Catering,Escolar,Mixto,Piura
-CLI_497651,Cafetería,Especialidad,Para Llevar,Lima
-CLI_387784,Farmacia,Independiente,Mostrador,Cusco
-CLI_111096,Cafetería,Saludable,Co-Working,Piura
-CLI_636456,Ferretería,Especializada,Mostrador,Arequipa
-CLI_412499,Supermercado,Mayorista,Online + Tienda,Cusco
-CLI_099843,Minimarket,24 Horas,Tienda Física,Cusco
-CLI_768739,Minimarket,Express,24 Horas,Lima
-CLI_488259,Farmacia,Independiente,Autoservicio,Lima
-CLI_791487,Farmacia,Homeopática,Drive-Thru,Arequipa
-CLI_296946,Bodega,Mayorista,Autoservicio,Lima
-CLI_158533,Fast Food,Sándwiches,Salón,Lima
-CLI_888036,Supermercado,Mayorista,Solo Online,Piura
-CLI_076077,Fast Food,Wraps,Salón,Piura
-CLI_013881,Catering,Social,Off-Site,Piura
+CLI_042337,Restaurante,Italiano,Delivery,Arequipa
+CLI_692377,Bodega,Licorería,Mostrador + Delivery,Arequipa
+CLI_612877,Bodega,Licorería,Mostrador + Delivery,Arequipa
+CLI_074755,Hotel,Hostal,Desayuno Incluido,Piura
+CLI_249728,Restaurante,Carnes,Salón,Cusco
+CLI_035185,Panadería,Artesanal,Local + Distribución,Arequipa
+CLI_800087,Bodega,Abarrotes,Mostrador + Delivery,Piura
+CLI_624077,Hotel,Apart-hotel,Desayuno Incluido,Lima
+CLI_182697,Minimarket,24 Horas,Tienda + Delivery,Arequipa
+CLI_423565,Minimarket,Express,24 Horas,Lima
+CLI_552643,Fast Food,Wraps,Delivery,Arequipa
+CLI_696152,Panadería,Pastelería,Distribución,Lima
+CLI_667692,Supermercado,Orgánico,Online + Tienda,Cusco
+CLI_751725,Minimarket,Barrio,Tienda + Delivery,Cusco
+CLI_316524,Catering,Escolar,Mixto,Arequipa
+CLI_986228,Cafetería,Especialidad,Para Llevar,Cusco
+CLI_228485,Supermercado,Gourmet,Online + Tienda,Lima
+CLI_165481,Minimarket,24 Horas,Tienda + Delivery,Piura
+CLI_181039,Bodega,Mixta,Autoservicio,Arequipa
+CLI_271747,Panadería,Artesanal,Distribución,Lima
+CLI_493013,Restaurante,Japonés,Delivery + Salón,Lima
+CLI_007283,Catering,Social,On-Site,Lima
+CLI_182275,Minimarket,Universitario,24 Horas,Arequipa
+CLI_947198,Minimarket,24 Horas,24 Horas,Lima
+CLI_751360,Bodega,Mayorista,Mostrador,Arequipa
+CLI_501801,Supermercado,Orgánico,Tienda Física,Cusco
+CLI_416636,Minimarket,Universitario,24 Horas,Arequipa
+CLI_485627,Panadería,Repostería,Local Propio,Cusco
+CLI_893415,Restaurante,Carnes,Para Llevar,Piura
+CLI_200154,Cafetería,Saludable,Co-Working,Lima
+CLI_796492,Supermercado,Formato Grande,Solo Online,Lima
+CLI_836418,Restaurante,Criollo,Salón,Lima
+CLI_389273,Restaurante,Criollo,Delivery,Arequipa
+CLI_923876,Restaurante,Japonés,Delivery + Salón,Piura
+CLI_194546,Restaurante,Chifa,Delivery,Arequipa
+CLI_919140,Panadería,Repostería,Local + Distribución,Arequipa
+CLI_857729,Panadería,Artesanal,Local + Distribución,Arequipa
+CLI_062363,Fast Food,Wraps,Solo Delivery,Lima
+CLI_888042,Restaurante,Criollo,Dark Kitchen,Arequipa
+CLI_642484,Restaurante,Carnes,Dark Kitchen,Cusco
+CLI_704058,Minimarket,Barrio,24 Horas,Arequipa
+CLI_643888,Catering,Social,On-Site,Arequipa
+CLI_467172,Fast Food,Sándwiches,Solo Delivery,Arequipa
+CLI_570117,Minimarket,Gasolinera,Tienda + Delivery,Cusco
+CLI_193477,Restaurante,Buffet,Delivery,Lima
+CLI_857469,Supermercado,Formato Grande,Solo Online,Piura
+CLI_754597,Farmacia,Independiente,Drive-Thru,Piura
+CLI_166384,Cafetería,Moderna,Para Llevar,Piura
+CLI_414772,Bodega,Abarrotes,Autoservicio,Arequipa
+CLI_262369,Cafetería,Especialidad,Para Llevar,Piura
+CLI_775597,Fast Food,Wraps,Delivery,Arequipa
+CLI_501617,Catering,Industrial,On-Site,Piura
+CLI_862708,Ferretería,Mayorista,Mostrador,Lima
+CLI_526357,Panadería,Repostería,Local + Distribución,Arequipa
+CLI_399350,Cafetería,Tradicional,Salón + Delivery,Arequipa
+CLI_976756,Bodega,Licorería,Mostrador,Piura
+CLI_097102,Bodega,Mayorista,Mostrador + Delivery,Arequipa
+CLI_049095,Restaurante,Buffet,Para Llevar,Arequipa
+CLI_373210,Fast Food,Sándwiches,Solo Delivery,Piura
+CLI_022332,Minimarket,Universitario,24 Horas,Cusco
+CLI_649669,Ferretería,General,Mostrador,Arequipa
+CLI_270575,Minimarket,Barrio,24 Horas,Cusco
+CLI_300975,Fast Food,Pizza,Drive-Thru,Lima
+CLI_415797,Bodega,Mayorista,Mostrador + Delivery,Lima
+CLI_430075,Supermercado,Formato Mediano,Tienda Física,Piura
+CLI_443310,Catering,Industrial,Off-Site,Lima
+CLI_709173,Supermercado,Orgánico,Tienda Física,Lima
+CLI_364513,Bodega,Licorería,Autoservicio,Arequipa
+CLI_697739,Farmacia,Cadena,Autoservicio,Piura
+CLI_559379,Restaurante,Chifa,Dark Kitchen,Arequipa
+CLI_128117,Bodega,Mixta,Mostrador,Lima
+CLI_606215,Hotel,Hostal,Todo Incluido,Arequipa
+CLI_201436,Minimarket,24 Horas,Tienda Física,Piura
+CLI_913776,Fast Food,Pizza,Delivery,Arequipa
+CLI_843351,Hotel,Business,Solo Alojamiento,Lima
+CLI_280005,Hotel,Business,Desayuno Incluido,Lima
+CLI_720285,Hotel,Hostal,Todo Incluido,Piura
+CLI_724535,Minimarket,24 Horas,Tienda + Delivery,Piura
+CLI_711558,Hotel,Hostal,Desayuno Incluido,Piura
+CLI_072226,Cafetería,Saludable,Co-Working,Arequipa
+CLI_061962,Minimarket,Express,Tienda Física,Arequipa
+CLI_335802,Fast Food,Sándwiches,Drive-Thru,Piura
+CLI_446511,Fast Food,Pizza,Delivery,Lima
+CLI_116864,Fast Food,Pizza,Drive-Thru,Arequipa
+CLI_456421,Cafetería,Saludable,Salón + Delivery,Piura
+CLI_811954,Restaurante,Fusión,Salón,Lima
+CLI_264424,Catering,Escolar,On-Site,Piura
+CLI_627345,Supermercado,Formato Mediano,Solo Online,Piura
+CLI_059686,Minimarket,24 Horas,Tienda Física,Piura
+CLI_075141,Minimarket,Universitario,Tienda + Delivery,Lima
+CLI_486494,Catering,Industrial,Mixto,Cusco
+CLI_427905,Minimarket,Universitario,Tienda Física,Cusco
+CLI_705532,Bodega,Barrio,Mostrador + Delivery,Arequipa
+CLI_452556,Minimarket,Barrio,Tienda Física,Cusco
+CLI_743523,Supermercado,Mayorista,Solo Online,Arequipa
+CLI_181279,Supermercado,Mayorista,Solo Online,Lima
+CLI_866036,Bodega,Licorería,Autoservicio,Lima
+CLI_023679,Hotel,Resort,Todo Incluido,Cusco
+CLI_759864,Panadería,Integral,Distribución,Piura
+CLI_175666,Hotel,Hostal,Solo Alojamiento,Arequipa
+CLI_023642,Bodega,Barrio,Mostrador,Lima
+CLI_575538,Cafetería,Tradicional,Salón,Piura
+CLI_952410,Panadería,Industrial,Distribución,Arequipa
+CLI_988569,Bodega,Barrio,Mostrador + Delivery,Cusco
+CLI_688423,Supermercado,Gourmet,Online + Tienda,Piura
+CLI_435722,Cafetería,Moderna,Co-Working,Cusco
+CLI_513251,Cafetería,Temática,Salón,Piura
+CLI_782226,Fast Food,Pollo,Drive-Thru,Piura
+CLI_666750,Supermercado,Formato Grande,Tienda Física,Cusco
+CLI_885217,Minimarket,Gasolinera,24 Horas,Arequipa
+CLI_074553,Minimarket,Universitario,Tienda Física,Piura
+CLI_530631,Minimarket,Barrio,Tienda + Delivery,Arequipa
+CLI_524634,Panadería,Pastelería,Local Propio,Piura
+CLI_821152,Minimarket,Gasolinera,24 Horas,Lima
+CLI_818740,Cafetería,Moderna,Salón + Delivery,Cusco
+CLI_534280,Fast Food,Árabe,Solo Delivery,Lima
+CLI_846433,Cafetería,Tradicional,Para Llevar,Arequipa
+CLI_366565,Bodega,Licorería,Mostrador,Arequipa
+CLI_740649,Minimarket,Universitario,24 Horas,Piura
+CLI_658012,Panadería,Pastelería,Distribución,Arequipa
+CLI_638797,Panadería,Repostería,Distribución,Cusco
+CLI_122772,Minimarket,24 Horas,Tienda Física,Cusco
+CLI_503702,Restaurante,Pollería,Delivery + Salón,Piura
+CLI_274151,Restaurante,Japonés,Para Llevar,Lima
+CLI_489519,Cafetería,Temática,Salón + Delivery,Piura
+CLI_784659,Panadería,Francesa,Local + Distribución,Cusco
+CLI_432308,Fast Food,Árabe,Salón,Piura
+CLI_099404,Bodega,Licorería,Mostrador + Delivery,Arequipa
+CLI_345317,Panadería,Artesanal,Local + Distribución,Cusco
+CLI_065766,Hotel,Business,Solo Alojamiento,Arequipa
+CLI_481266,Bodega,Mixta,Autoservicio,Arequipa
+CLI_319092,Cafetería,Saludable,Para Llevar,Piura
+CLI_002474,Cafetería,Tradicional,Para Llevar,Arequipa
+CLI_071235,Minimarket,Barrio,24 Horas,Piura
+CLI_817274,Restaurante,Marino,Delivery + Salón,Lima
+CLI_623991,Restaurante,Pollería,Dark Kitchen,Lima
+CLI_142306,Supermercado,Orgánico,Solo Online,Lima
+CLI_075329,Bodega,Licorería,Autoservicio,Cusco
+CLI_724639,Cafetería,Moderna,Co-Working,Lima
+CLI_712977,Restaurante,Criollo,Dark Kitchen,Cusco
+CLI_318442,Cafetería,Tradicional,Salón + Delivery,Cusco
+CLI_372895,Restaurante,Criollo,Dark Kitchen,Lima
+CLI_854757,Fast Food,Tacos,Delivery,Lima
+CLI_276535,Panadería,Pastelería,Local + Distribución,Cusco
+CLI_243060,Supermercado,Formato Mediano,Solo Online,Piura
+CLI_110634,Restaurante,Chifa,Delivery,Arequipa
+CLI_709698,Restaurante,Carnes,Dark Kitchen,Cusco
+CLI_594378,Supermercado,Formato Grande,Online + Tienda,Arequipa
+CLI_802512,Fast Food,Wraps,Salón,Cusco
+CLI_595577,Restaurante,Fusión,Delivery,Arequipa
+CLI_114319,Cafetería,Saludable,Salón,Cusco
+CLI_933747,Bar,Cocteles,Presencial + Eventos,Piura
+CLI_792943,Fast Food,Pollo,Salón + Delivery,Lima
+CLI_180923,Ferretería,General,Catálogo Online,Arequipa
+CLI_550412,Catering,Social,Mixto,Piura
+CLI_552034,Bodega,Abarrotes,Mostrador,Cusco
+CLI_537500,Hotel,Apart-hotel,Restaurante Propio,Arequipa
+CLI_917789,Bodega,Licorería,Autoservicio,Cusco
+CLI_353616,Restaurante,Fusión,Salón,Cusco
+CLI_471347,Farmacia,Independiente,Mostrador,Cusco
+CLI_467413,Bodega,Licorería,Mostrador + Delivery,Piura
+CLI_207390,Fast Food,Wraps,Solo Delivery,Cusco
+CLI_350396,Minimarket,Gasolinera,Tienda Física,Cusco
+CLI_926170,Panadería,Francesa,Local Propio,Lima
+CLI_880614,Bodega,Mixta,Mostrador,Lima
+CLI_252471,Bodega,Mixta,Mostrador,Lima
+CLI_202624,Minimarket,Universitario,Tienda Física,Lima
+CLI_808623,Restaurante,Marino,Para Llevar,Lima
+CLI_515490,Catering,Industrial,Mixto,Piura
+CLI_470633,Bar,Cocteles,Reservas,Arequipa
+CLI_888052,Hotel,Apart-hotel,Solo Alojamiento,Piura
+CLI_175686,Bodega,Licorería,Mostrador + Delivery,Cusco
+CLI_993521,Bodega,Mayorista,Autoservicio,Piura
+CLI_497651,Hotel,Turístico,Desayuno Incluido,Lima
+CLI_391473,Fast Food,Wraps,Salón,Cusco
+CLI_711762,Bodega,Abarrotes,Mostrador,Piura
+CLI_007184,Panadería,Industrial,Local + Distribución,Arequipa
+CLI_412499,Restaurante,Japonés,Delivery + Salón,Cusco
+CLI_099843,Bodega,Mayorista,Mostrador,Cusco
+CLI_768739,Catering,Industrial,Off-Site,Lima
+CLI_809537,Fast Food,Tacos,Salón + Delivery,Cusco
+CLI_148721,Fast Food,Wraps,Salón,Arequipa
+CLI_518471,Panadería,Artesanal,Local + Distribución,Piura
+CLI_048880,Minimarket,Gasolinera,24 Horas,Arequipa
+CLI_076077,Cafetería,Moderna,Salón,Piura
+CLI_795618,Minimarket,Express,Tienda Física,Piura
 CLI_379218,Supermercado,Formato Grande,Online + Tienda,Piura
-CLI_044864,Restaurante,Buffet,Para Llevar,Piura
-CLI_406256,Ferretería,Industrial,Autoservicio,Piura
-CLI_031056,Restaurante,Criollo,Delivery,Arequipa
-CLI_416665,Panadería,Artesanal,Local Propio,Piura
-CLI_902330,Bodega,Mixta,Autoservicio,Cusco
-CLI_418342,Farmacia,Independiente,Autoservicio,Piura
-CLI_595076,Ferretería,General,Mostrador,Arequipa
-CLI_256964,Catering,Social,Off-Site,Cusco
-CLI_221147,Bodega,Mayorista,Mostrador + Delivery,Piura
-CLI_038266,Ferretería,Industrial,Autoservicio,Arequipa
-CLI_530637,Panadería,Pastelería,Distribución,Lima
-CLI_894401,Supermercado,Formato Mediano,Online + Tienda,Piura
-CLI_848905,Bar,Cervecería,Presencial + Eventos,Arequipa
-CLI_539701,Farmacia,Independiente,Mostrador,Lima
-CLI_535877,Hotel,Resort,Desayuno Incluido,Arequipa
-CLI_442492,Fast Food,Hamburguesas,Delivery,Arequipa
-CLI_779404,Supermercado,Formato Grande,Online + Tienda,Piura
-CLI_757188,Minimarket,Gasolinera,24 Horas,Piura
-CLI_381308,Minimarket,Barrio,24 Horas,Lima
-CLI_177076,Hotel,Resort,Restaurante Propio,Piura
-CLI_257621,Hotel,Business,Desayuno Incluido,Lima
-CLI_523317,Restaurante,Buffet,Dark Kitchen,Arequipa
-CLI_063414,Ferretería,Especializada,Mostrador,Lima
-CLI_037866,Panadería,Francesa,Local Propio,Cusco
-CLI_317809,Ferretería,Mayorista,Autoservicio,Cusco
-CLI_894467,Ferretería,Especializada,Mostrador,Cusco
-CLI_182319,Bodega,Mayorista,Mostrador,Arequipa
-CLI_043417,Hotel,Resort,Todo Incluido,Piura
-CLI_873675,Farmacia,Independiente,Autoservicio,Cusco
-CLI_659338,Ferretería,Industrial,Mostrador,Cusco
-CLI_526095,Catering,Social,Off-Site,Cusco
-CLI_458190,Panadería,Integral,Local + Distribución,Lima
-CLI_734608,Bar,Pub,Presencial + Eventos,Lima
-CLI_535163,Supermercado,Formato Mediano,Online + Tienda,Arequipa
-CLI_565880,Catering,Escolar,On-Site,Lima
-CLI_120456,Restaurante,Fusión,Para Llevar,Cusco
-CLI_564139,Catering,Industrial,Off-Site,Cusco
-CLI_106186,Supermercado,Gourmet,Solo Online,Piura
-CLI_888696,Panadería,Industrial,Local + Distribución,Cusco
-CLI_832404,Farmacia,Homeopática,Drive-Thru,Piura
-CLI_453957,Fast Food,Sándwiches,Delivery,Lima
-CLI_075872,Ferretería,Industrial,Catálogo Online,Lima
-CLI_479067,Farmacia,Independiente,Mostrador,Arequipa
-CLI_504953,Ferretería,General,Autoservicio,Arequipa
-CLI_097750,Cafetería,Temática,Para Llevar,Cusco
-CLI_098620,Ferretería,Especializada,Catálogo Online,Lima
-CLI_622769,Cafetería,Temática,Para Llevar,Piura
-CLI_827478,Bar,Cervecería,Reservas,Arequipa
-CLI_914972,Panadería,Industrial,Local + Distribución,Cusco
-CLI_273671,Fast Food,Wraps,Drive-Thru,Piura
-CLI_377537,Bodega,Licorería,Autoservicio,Cusco
-CLI_094696,Cafetería,Moderna,Salón + Delivery,Lima
-CLI_386622,Panadería,Integral,Local + Distribución,Lima
-CLI_462675,Cafetería,Especialidad,Salón + Delivery,Piura
-CLI_680014,Hotel,Hostal,Restaurante Propio,Piura
-CLI_100968,Fast Food,Pizza,Delivery,Lima
-CLI_816859,Fast Food,Hamburguesas,Salón,Lima
-CLI_260497,Fast Food,Pollo,Delivery,Arequipa
-CLI_203928,Cafetería,Moderna,Salón,Piura
-CLI_923615,Bodega,Barrio,Autoservicio,Cusco
-CLI_142007,Minimarket,Universitario,Tienda + Delivery,Cusco
-CLI_600313,Restaurante,Vegetariano,Delivery,Cusco
-CLI_774478,Ferretería,General,Catálogo Online,Lima
-CLI_367159,Farmacia,Cadena,Mostrador,Arequipa
-CLI_096383,Bar,Cocteles,Reservas,Cusco
-CLI_596231,Cafetería,Moderna,Para Llevar,Arequipa
-CLI_410092,Bodega,Barrio,Mostrador + Delivery,Cusco
-CLI_358490,Panadería,Integral,Local + Distribución,Lima
-CLI_426598,Hotel,Apart-hotel,Restaurante Propio,Piura
-CLI_901649,Fast Food,Sándwiches,Drive-Thru,Lima
-CLI_103741,Minimarket,24 Horas,Tienda Física,Lima
-CLI_560238,Panadería,Artesanal,Distribución,Cusco
-CLI_392010,Hotel,Boutique,Desayuno Incluido,Arequipa
-CLI_654900,Supermercado,Mayorista,Tienda Física,Cusco
+CLI_485082,Restaurante,Marino,Salón,Cusco
+CLI_608268,Minimarket,Express,Tienda Física,Piura
+CLI_608682,Restaurante,Criollo,Salón,Lima
+CLI_126655,Restaurante,Japonés,Delivery,Cusco
+CLI_023304,Supermercado,Gourmet,Tienda Física,Lima
+CLI_625566,Bodega,Mayorista,Mostrador,Lima
+CLI_946992,Fast Food,Wraps,Solo Delivery,Arequipa
+CLI_315564,Bodega,Mixta,Mostrador + Delivery,Piura
+CLI_211477,Catering,Matrimonios,Mixto,Piura
+CLI_038266,Supermercado,Mayorista,Online + Tienda,Arequipa
+CLI_530637,Supermercado,Gourmet,Online + Tienda,Lima
+CLI_894401,Hotel,Business,Solo Alojamiento,Piura
+CLI_489055,Panadería,Integral,Distribución,Arequipa
+CLI_539701,Fast Food,Hamburguesas,Drive-Thru,Lima
+CLI_516117,Bodega,Licorería,Mostrador + Delivery,Arequipa
+CLI_208383,Cafetería,Temática,Salón,Arequipa
+CLI_794045,Restaurante,Italiano,Salón,Piura
+CLI_833709,Bodega,Licorería,Mostrador + Delivery,Piura
+CLI_381308,Bodega,Barrio,Autoservicio,Lima
+CLI_563538,Bodega,Barrio,Mostrador,Arequipa
+CLI_576211,Bodega,Abarrotes,Autoservicio,Lima
+CLI_317220,Bodega,Abarrotes,Mostrador + Delivery,Arequipa
+CLI_090303,Fast Food,Hamburguesas,Drive-Thru,Cusco
+CLI_876597,Panadería,Pastelería,Distribución,Cusco
+CLI_036749,Fast Food,Hamburguesas,Salón + Delivery,Piura
+CLI_936678,Hotel,Hostal,Solo Alojamiento,Cusco
+CLI_148235,Fast Food,Hamburguesas,Salón + Delivery,Lima
+CLI_503452,Minimarket,Barrio,24 Horas,Piura
+CLI_026495,Fast Food,Tacos,Salón + Delivery,Arequipa
+CLI_609545,Fast Food,Pollo,Drive-Thru,Cusco
+CLI_190187,Bodega,Barrio,Autoservicio,Cusco
+CLI_215787,Bodega,Barrio,Mostrador,Piura
+CLI_642827,Minimarket,Gasolinera,24 Horas,Arequipa
+CLI_930094,Catering,Industrial,Mixto,Piura
+CLI_990591,Hotel,Boutique,Solo Alojamiento,Arequipa
+CLI_733335,Hotel,Business,Todo Incluido,Piura
+CLI_398196,Minimarket,24 Horas,Tienda + Delivery,Piura
+CLI_744906,Restaurante,Chifa,Delivery,Cusco
+CLI_644832,Hotel,Apart-hotel,Todo Incluido,Cusco
+CLI_825453,Panadería,Integral,Distribución,Lima
+CLI_146179,Fast Food,Wraps,Delivery,Arequipa
+CLI_804790,Minimarket,Barrio,Tienda + Delivery,Arequipa
+CLI_745474,Panadería,Pastelería,Local + Distribución,Arequipa
+CLI_977504,Bodega,Barrio,Mostrador + Delivery,Piura
+CLI_862058,Fast Food,Wraps,Delivery,Arequipa
+CLI_227697,Bodega,Mixta,Autoservicio,Cusco
+CLI_721509,Minimarket,24 Horas,24 Horas,Piura
+CLI_743671,Panadería,Industrial,Distribución,Arequipa
+CLI_044499,Restaurante,Marino,Salón,Piura
+CLI_254273,Minimarket,Express,24 Horas,Arequipa
+CLI_969498,Farmacia,Independiente,Mostrador,Arequipa
+CLI_637775,Bodega,Barrio,Autoservicio,Piura
+CLI_300045,Fast Food,Wraps,Drive-Thru,Cusco
+CLI_100968,Minimarket,Gasolinera,24 Horas,Lima
+CLI_816859,Cafetería,Tradicional,Salón,Lima
+CLI_496924,Cafetería,Temática,Co-Working,Arequipa
+CLI_733092,Bodega,Barrio,Autoservicio,Cusco
+CLI_361546,Restaurante,Carnes,Dark Kitchen,Lima
+CLI_007704,Catering,Escolar,On-Site,Lima
+CLI_279559,Bar,Lounge,Reservas,Cusco
+CLI_775098,Minimarket,Express,Tienda + Delivery,Cusco
+CLI_330963,Restaurante,Fusión,Para Llevar,Arequipa
+CLI_610316,Restaurante,Vegetariano,Para Llevar,Lima
+CLI_067117,Panadería,Pastelería,Distribución,Piura
+CLI_649890,Fast Food,Hamburguesas,Solo Delivery,Arequipa
+CLI_186468,Restaurante,Chifa,Delivery + Salón,Piura
+CLI_016490,Supermercado,Formato Mediano,Tienda Física,Piura
+CLI_806808,Restaurante,Chifa,Para Llevar,Lima
+CLI_284896,Fast Food,Árabe,Solo Delivery,Arequipa
+CLI_187753,Restaurante,Buffet,Dark Kitchen,Lima
+CLI_654900,Bodega,Licorería,Mostrador,Cusco
 CLI_009752,Supermercado,Formato Grande,Online + Tienda,Cusco
-CLI_124216,Fast Food,Pollo,Drive-Thru,Piura
-CLI_967302,Fast Food,Tacos,Solo Delivery,Lima
-CLI_375276,Farmacia,Independiente,Drive-Thru,Arequipa
-CLI_769416,Restaurante,Carnes,Salón,Lima
-CLI_226841,Restaurante,Italiano,Para Llevar,Lima
-CLI_741875,Farmacia,Cadena,Mostrador,Arequipa
-CLI_637307,Catering,Matrimonios,Mixto,Piura
-CLI_448194,Catering,Matrimonios,On-Site,Cusco
-CLI_769216,Hotel,Business,Todo Incluido,Lima
-CLI_841386,Cafetería,Moderna,Salón,Piura
-CLI_458244,Ferretería,Especializada,Mostrador,Lima
-CLI_242999,Fast Food,Tacos,Drive-Thru,Lima
-CLI_975438,Catering,Eventos Corporativos,On-Site,Lima
-CLI_076423,Bodega,Licorería,Mostrador,Piura
-CLI_437870,Bar,Karaoke,Presencial,Cusco
-CLI_473468,Bodega,Mayorista,Mostrador + Delivery,Lima
-CLI_042957,Catering,Escolar,Mixto,Lima
-CLI_959303,Ferretería,Mayorista,Catálogo Online,Cusco
-CLI_367571,Ferretería,General,Autoservicio,Arequipa
-CLI_677877,Minimarket,Universitario,Tienda Física,Piura
-CLI_540345,Hotel,Turístico,Solo Alojamiento,Lima
-CLI_884366,Bodega,Mixta,Mostrador + Delivery,Lima
-CLI_082912,Minimarket,Express,Tienda Física,Piura
-CLI_562951,Bodega,Mayorista,Mostrador,Arequipa
-CLI_620829,Catering,Industrial,Mixto,Arequipa
-CLI_674655,Catering,Social,Off-Site,Cusco
-CLI_837232,Cafetería,Especialidad,Para Llevar,Lima
-CLI_419729,Supermercado,Gourmet,Online + Tienda,Piura
-CLI_031215,Supermercado,Formato Mediano,Tienda Física,Lima
-CLI_149510,Bar,Cocteles,Reservas,Cusco
-CLI_195562,Supermercado,Mayorista,Online + Tienda,Arequipa
-CLI_793140,Ferretería,Especializada,Catálogo Online,Lima
-CLI_623361,Cafetería,Tradicional,Salón + Delivery,Piura
-CLI_086993,Cafetería,Moderna,Salón,Cusco
-CLI_931833,Hotel,Hostal,Restaurante Propio,Arequipa
-CLI_980749,Hotel,Turístico,Solo Alojamiento,Cusco
-CLI_748513,Cafetería,Moderna,Salón + Delivery,Arequipa
-CLI_049457,Panadería,Integral,Distribución,Piura
-CLI_248354,Minimarket,24 Horas,24 Horas,Cusco
-CLI_136616,Minimarket,Barrio,Tienda Física,Arequipa
-CLI_960749,Catering,Matrimonios,Off-Site,Arequipa
-CLI_426983,Ferretería,Industrial,Catálogo Online,Lima
-CLI_146303,Cafetería,Moderna,Salón,Arequipa
-CLI_595710,Restaurante,Marino,Para Llevar,Piura
-CLI_863660,Farmacia,Naturista,Autoservicio,Arequipa
-CLI_534391,Supermercado,Formato Grande,Tienda Física,Piura
-CLI_756987,Farmacia,Cadena,Mostrador,Lima
-CLI_110361,Catering,Industrial,On-Site,Cusco
-CLI_708281,Ferretería,Mayorista,Mostrador,Piura
-CLI_106707,Cafetería,Moderna,Para Llevar,Cusco
-CLI_065490,Restaurante,Carnes,Salón,Arequipa
-CLI_792913,Bar,Karaoke,Presencial,Lima
-CLI_315725,Supermercado,Gourmet,Solo Online,Lima
-CLI_212959,Ferretería,General,Catálogo Online,Lima
-CLI_461618,Minimarket,Universitario,Tienda + Delivery,Cusco
-CLI_219111,Catering,Matrimonios,Mixto,Arequipa
-CLI_704347,Fast Food,Pizza,Solo Delivery,Cusco
-CLI_281084,Minimarket,Universitario,24 Horas,Arequipa
-CLI_414601,Supermercado,Formato Grande,Solo Online,Cusco
-CLI_781312,Fast Food,Sándwiches,Salón,Cusco
-CLI_727527,Panadería,Industrial,Distribución,Cusco
-CLI_951414,Hotel,Resort,Todo Incluido,Piura
-CLI_000693,Bar,Sports Bar,Presencial,Arequipa
-CLI_676544,Supermercado,Gourmet,Solo Online,Arequipa
-CLI_558507,Bar,Cervecería,Reservas,Cusco
-CLI_334058,Panadería,Francesa,Distribución,Arequipa
-CLI_433754,Fast Food,Pollo,Salón + Delivery,Cusco
-CLI_534963,Bodega,Mixta,Mostrador,Arequipa
-CLI_513857,Hotel,Boutique,Restaurante Propio,Arequipa
-CLI_333626,Catering,Eventos Corporativos,Off-Site,Lima
-CLI_115064,Fast Food,Hamburguesas,Delivery,Cusco
-CLI_593358,Cafetería,Tradicional,Salón + Delivery,Lima
-CLI_357363,Fast Food,Wraps,Drive-Thru,Cusco
-CLI_878520,Minimarket,Express,Tienda + Delivery,Cusco
-CLI_975525,Minimarket,Universitario,Tienda + Delivery,Cusco
-CLI_763845,Catering,Matrimonios,Off-Site,Piura
-CLI_647107,Catering,Industrial,Off-Site,Piura
-CLI_689268,Ferretería,Industrial,Mostrador,Cusco
-CLI_242778,Ferretería,General,Catálogo Online,Cusco
-CLI_822162,Hotel,Boutique,Desayuno Incluido,Piura
-CLI_073494,Panadería,Industrial,Local Propio,Lima
-CLI_128618,Minimarket,24 Horas,24 Horas,Cusco
-CLI_320986,Restaurante,Chifa,Salón,Lima
-CLI_179589,Catering,Matrimonios,On-Site,Arequipa
-CLI_573878,Bodega,Barrio,Mostrador,Piura
-CLI_122480,Catering,Matrimonios,On-Site,Arequipa
-CLI_542271,Fast Food,Hamburguesas,Delivery,Cusco
-CLI_096869,Fast Food,Pizza,Delivery,Piura
-CLI_393818,Cafetería,Especialidad,Salón + Delivery,Cusco
-CLI_993972,Catering,Eventos Corporativos,Off-Site,Piura
-CLI_408894,Bodega,Abarrotes,Mostrador + Delivery,Cusco
-CLI_888653,Hotel,Apart-hotel,Todo Incluido,Arequipa
-CLI_614602,Bodega,Barrio,Mostrador,Arequipa
-CLI_127761,Hotel,Hostal,Restaurante Propio,Cusco
-CLI_811532,Hotel,Resort,Todo Incluido,Lima
-CLI_338500,Catering,Escolar,On-Site,Piura
-CLI_280661,Panadería,Francesa,Local Propio,Arequipa
-CLI_057984,Supermercado,Orgánico,Tienda Física,Piura
-CLI_982734,Fast Food,Pollo,Drive-Thru,Piura
-CLI_711709,Ferretería,Especializada,Autoservicio,Piura
-CLI_364013,Ferretería,Industrial,Mostrador,Cusco
-CLI_345050,Bar,Sports Bar,Presencial + Eventos,Piura
-CLI_995702,Bodega,Abarrotes,Mostrador + Delivery,Cusco
-CLI_180114,Cafetería,Saludable,Co-Working,Arequipa
-CLI_351101,Bodega,Mayorista,Mostrador,Arequipa
-CLI_286723,Fast Food,Pizza,Salón + Delivery,Piura
-CLI_718670,Hotel,Apart-hotel,Todo Incluido,Piura
-CLI_027499,Restaurante,Carnes,Delivery,Lima
-CLI_541713,Bodega,Abarrotes,Mostrador + Delivery,Piura
-CLI_785629,Cafetería,Moderna,Para Llevar,Lima
-CLI_924032,Farmacia,Cadena,Autoservicio,Lima
-CLI_913047,Catering,Escolar,Mixto,Cusco
-CLI_630649,Bodega,Abarrotes,Mostrador + Delivery,Piura
-CLI_277560,Minimarket,Barrio,Tienda + Delivery,Arequipa
-CLI_081727,Supermercado,Formato Mediano,Online + Tienda,Piura
-CLI_879963,Panadería,Pastelería,Distribución,Lima
-CLI_484547,Hotel,Hostal,Desayuno Incluido,Arequipa
-CLI_605966,Ferretería,Especializada,Autoservicio,Piura
-CLI_604083,Bodega,Mixta,Mostrador + Delivery,Piura
-CLI_520001,Bar,Cocteles,Presencial,Cusco
-CLI_652205,Catering,Eventos Corporativos,Off-Site,Lima
-CLI_113082,Fast Food,Wraps,Salón + Delivery,Cusco
-CLI_839820,Bar,Cervecería,Presencial + Eventos,Arequipa
-CLI_501146,Bar,Karaoke,Reservas,Cusco
-CLI_696801,Cafetería,Especialidad,Co-Working,Piura
-CLI_982664,Panadería,Artesanal,Local + Distribución,Piura
-CLI_141974,Panadería,Pastelería,Distribución,Cusco
-CLI_525800,Bodega,Barrio,Autoservicio,Cusco
-CLI_579035,Catering,Industrial,Mixto,Cusco
-CLI_055268,Minimarket,Barrio,Tienda + Delivery,Lima
-CLI_360213,Bodega,Mixta,Mostrador + Delivery,Piura
-CLI_936861,Farmacia,Cadena,Drive-Thru,Arequipa
-CLI_986777,Fast Food,Wraps,Salón + Delivery,Piura
-CLI_604114,Ferretería,Especializada,Autoservicio,Cusco
-CLI_200831,Bodega,Abarrotes,Mostrador,Lima
-CLI_125497,Panadería,Pastelería,Distribución,Lima
-CLI_886109,Farmacia,Naturista,Mostrador,Cusco
-CLI_681551,Panadería,Artesanal,Local + Distribución,Lima
-CLI_777481,Minimarket,Gasolinera,Tienda Física,Arequipa
-CLI_844728,Hotel,Business,Restaurante Propio,Arequipa
-CLI_037361,Cafetería,Especialidad,Para Llevar,Cusco
-CLI_444873,Minimarket,24 Horas,24 Horas,Lima
-CLI_750347,Bodega,Mayorista,Mostrador,Cusco
-CLI_669067,Restaurante,Japonés,Salón,Arequipa
-CLI_787338,Catering,Industrial,Mixto,Piura
-CLI_686643,Fast Food,Tacos,Salón + Delivery,Cusco
-CLI_037719,Minimarket,Gasolinera,Tienda Física,Arequipa
-CLI_557107,Minimarket,Barrio,Tienda + Delivery,Arequipa
-CLI_457825,Minimarket,Gasolinera,Tienda + Delivery,Lima
+CLI_654960,Cafetería,Moderna,Para Llevar,Piura
+CLI_673021,Cafetería,Especialidad,Salón,Lima
+CLI_276217,Panadería,Integral,Local + Distribución,Cusco
+CLI_032268,Fast Food,Pollo,Salón,Cusco
+CLI_174187,Restaurante,Chifa,Dark Kitchen,Arequipa
+CLI_730783,Minimarket,Gasolinera,Tienda Física,Piura
+CLI_042613,Restaurante,Buffet,Delivery + Salón,Cusco
+CLI_216018,Cafetería,Temática,Co-Working,Cusco
+CLI_867661,Minimarket,Gasolinera,Tienda Física,Piura
+CLI_824404,Restaurante,Fusión,Delivery + Salón,Piura
+CLI_299984,Bodega,Licorería,Mostrador + Delivery,Lima
+CLI_054784,Restaurante,Vegetariano,Dark Kitchen,Piura
+CLI_912604,Restaurante,Chifa,Delivery + Salón,Arequipa
+CLI_704784,Restaurante,Vegetariano,Dark Kitchen,Arequipa
+CLI_063652,Panadería,Repostería,Local + Distribución,Arequipa
+CLI_708709,Cafetería,Especialidad,Para Llevar,Arequipa
+CLI_363150,Catering,Eventos Corporativos,Off-Site,Piura
+CLI_567787,Restaurante,Italiano,Delivery,Piura
+CLI_620345,Bodega,Abarrotes,Mostrador + Delivery,Lima
+CLI_884366,Minimarket,Universitario,Tienda + Delivery,Lima
+CLI_082912,Restaurante,Vegetariano,Salón,Piura
+CLI_562951,Fast Food,Árabe,Drive-Thru,Arequipa
+CLI_108853,Minimarket,Barrio,24 Horas,Arequipa
+CLI_568431,Panadería,Pastelería,Distribución,Arequipa
+CLI_497034,Restaurante,Marino,Delivery,Piura
+CLI_511797,Panadería,Industrial,Local + Distribución,Piura
+CLI_543276,Bodega,Barrio,Autoservicio,Arequipa
+CLI_951097,Restaurante,Vegetariano,Dark Kitchen,Cusco
+CLI_955628,Bar,Sports Bar,Presencial,Piura
+CLI_679153,Supermercado,Mayorista,Online + Tienda,Cusco
+CLI_336157,Panadería,Industrial,Distribución,Arequipa
+CLI_869934,Restaurante,Pollería,Dark Kitchen,Lima
+CLI_183323,Catering,Escolar,Off-Site,Cusco
+CLI_749828,Catering,Eventos Corporativos,On-Site,Cusco
+CLI_851395,Cafetería,Saludable,Para Llevar,Arequipa
+CLI_049457,Restaurante,Buffet,Delivery + Salón,Piura
+CLI_508835,Restaurante,Japonés,Para Llevar,Cusco
+CLI_298468,Bodega,Barrio,Mostrador,Cusco
+CLI_129075,Restaurante,Carnes,Salón,Cusco
+CLI_983702,Hotel,Apart-hotel,Todo Incluido,Lima
+CLI_303690,Restaurante,Vegetariano,Delivery,Arequipa
+CLI_167513,Fast Food,Hamburguesas,Solo Delivery,Arequipa
+CLI_263531,Hotel,Apart-hotel,Solo Alojamiento,Piura
+CLI_491258,Fast Food,Pizza,Salón + Delivery,Lima
+CLI_894338,Minimarket,Barrio,Tienda Física,Arequipa
+CLI_711663,Restaurante,Marino,Salón,Piura
+CLI_670770,Restaurante,Pollería,Delivery + Salón,Lima
+CLI_012067,Restaurante,Fusión,Dark Kitchen,Lima
+CLI_913089,Bar,Sports Bar,Presencial + Eventos,Arequipa
+CLI_650875,Minimarket,Universitario,Tienda + Delivery,Piura
+CLI_079984,Farmacia,Cadena,Drive-Thru,Piura
+CLI_894547,Minimarket,Barrio,Tienda Física,Arequipa
+CLI_177503,Restaurante,Pollería,Dark Kitchen,Lima
+CLI_768249,Minimarket,Express,Tienda + Delivery,Cusco
+CLI_930663,Restaurante,Pollería,Delivery + Salón,Lima
+CLI_697813,Restaurante,Japonés,Delivery + Salón,Piura
+CLI_187275,Bodega,Mixta,Autoservicio,Arequipa
+CLI_464427,Supermercado,Mayorista,Online + Tienda,Lima
+CLI_290784,Restaurante,Vegetariano,Delivery + Salón,Lima
+CLI_616007,Farmacia,Homeopática,Drive-Thru,Cusco
+CLI_642385,Supermercado,Formato Mediano,Online + Tienda,Lima
+CLI_484016,Ferretería,General,Autoservicio,Arequipa
+CLI_433754,Catering,Matrimonios,Off-Site,Cusco
+CLI_025367,Minimarket,24 Horas,Tienda + Delivery,Arequipa
+CLI_083708,Bodega,Barrio,Mostrador + Delivery,Arequipa
+CLI_940223,Minimarket,Express,24 Horas,Lima
+CLI_115064,Catering,Eventos Corporativos,Off-Site,Cusco
+CLI_035304,Bodega,Licorería,Mostrador + Delivery,Piura
+CLI_363448,Bodega,Mixta,Mostrador + Delivery,Lima
+CLI_209427,Hotel,Hostal,Desayuno Incluido,Lima
+CLI_525543,Cafetería,Especialidad,Salón,Lima
+CLI_845246,Panadería,Pastelería,Local + Distribución,Cusco
+CLI_865146,Cafetería,Especialidad,Para Llevar,Cusco
+CLI_899702,Bodega,Mixta,Mostrador + Delivery,Cusco
+CLI_848968,Restaurante,Criollo,Para Llevar,Arequipa
+CLI_264112,Hotel,Apart-hotel,Desayuno Incluido,Arequipa
+CLI_492207,Minimarket,Universitario,24 Horas,Arequipa
+CLI_894080,Panadería,Industrial,Local + Distribución,Arequipa
+CLI_683882,Hotel,Resort,Solo Alojamiento,Lima
+CLI_992821,Fast Food,Árabe,Solo Delivery,Arequipa
+CLI_372411,Bodega,Mixta,Mostrador + Delivery,Arequipa
+CLI_056154,Minimarket,Gasolinera,Tienda + Delivery,Piura
+CLI_433690,Farmacia,Cadena,Autoservicio,Lima
+CLI_539381,Cafetería,Moderna,Co-Working,Piura
+CLI_939208,Hotel,Resort,Restaurante Propio,Piura
+CLI_687408,Bodega,Mayorista,Autoservicio,Cusco
+CLI_788865,Minimarket,Express,24 Horas,Arequipa
+CLI_367614,Minimarket,Universitario,Tienda + Delivery,Piura
+CLI_301598,Restaurante,Carnes,Para Llevar,Piura
+CLI_734726,Hotel,Apart-hotel,Todo Incluido,Arequipa
+CLI_418982,Supermercado,Formato Mediano,Tienda Física,Lima
+CLI_699171,Bar,Lounge,Presencial + Eventos,Cusco
+CLI_191505,Panadería,Integral,Distribución,Cusco
+CLI_229827,Hotel,Resort,Restaurante Propio,Cusco
+CLI_287117,Restaurante,Carnes,Dark Kitchen,Lima
+CLI_693640,Bodega,Abarrotes,Mostrador,Piura
+CLI_234505,Catering,Industrial,Mixto,Lima
+CLI_999957,Bodega,Mayorista,Autoservicio,Lima
+CLI_396180,Restaurante,Fusión,Dark Kitchen,Piura
+CLI_981351,Bodega,Mixta,Autoservicio,Lima
+CLI_887928,Bodega,Mayorista,Autoservicio,Arequipa
+CLI_397186,Fast Food,Tacos,Drive-Thru,Cusco
+CLI_202749,Restaurante,Criollo,Salón,Cusco
+CLI_448810,Restaurante,Italiano,Dark Kitchen,Arequipa
+CLI_856290,Restaurante,Criollo,Dark Kitchen,Piura
+CLI_768066,Minimarket,Barrio,Tienda Física,Cusco
+CLI_108649,Minimarket,Barrio,24 Horas,Lima
+CLI_649997,Bodega,Barrio,Mostrador + Delivery,Piura
+CLI_277560,Bodega,Barrio,Mostrador + Delivery,Arequipa
+CLI_023469,Restaurante,Japonés,Salón,Piura
+CLI_799630,Restaurante,Vegetariano,Delivery + Salón,Arequipa
+CLI_845478,Fast Food,Tacos,Salón + Delivery,Piura
+CLI_034261,Minimarket,Express,Tienda Física,Cusco
+CLI_040839,Fast Food,Wraps,Solo Delivery,Arequipa
+CLI_200014,Hotel,Hostal,Todo Incluido,Lima
+CLI_357074,Minimarket,Universitario,24 Horas,Piura
+CLI_473774,Hotel,Boutique,Restaurante Propio,Arequipa
+CLI_176815,Bodega,Mayorista,Mostrador,Lima
+CLI_644677,Minimarket,Barrio,Tienda Física,Arequipa
+CLI_696801,Panadería,Integral,Distribución,Piura
+CLI_826646,Restaurante,Chifa,Delivery,Piura
+CLI_401179,Restaurante,Vegetariano,Delivery,Cusco
+CLI_228331,Restaurante,Vegetariano,Dark Kitchen,Cusco
+CLI_579035,Farmacia,Homeopática,Drive-Thru,Cusco
+CLI_055268,Bodega,Barrio,Mostrador + Delivery,Lima
+CLI_441744,Fast Food,Wraps,Delivery,Piura
+CLI_987487,Panadería,Repostería,Distribución,Cusco
+CLI_634912,Bar,Pub,Presencial + Eventos,Lima
+CLI_161493,Cafetería,Moderna,Para Llevar,Piura
+CLI_831880,Fast Food,Hamburguesas,Delivery,Lima
+CLI_254977,Bodega,Barrio,Mostrador + Delivery,Arequipa
+CLI_679448,Catering,Social,Mixto,Lima
+CLI_016891,Farmacia,Independiente,Drive-Thru,Arequipa
+CLI_706318,Cafetería,Especialidad,Salón + Delivery,Cusco
+CLI_842127,Farmacia,Independiente,Mostrador,Cusco
+CLI_757149,Minimarket,24 Horas,Tienda Física,Cusco
+CLI_301089,Bar,Vinos,Presencial + Eventos,Lima
+CLI_430915,Bodega,Licorería,Mostrador,Arequipa
+CLI_733896,Minimarket,Universitario,24 Horas,Piura
+CLI_866438,Cafetería,Saludable,Para Llevar,Cusco
+CLI_037719,Supermercado,Gourmet,Tienda Física,Arequipa
+CLI_336085,Bodega,Mixta,Mostrador + Delivery,Arequipa
+CLI_457825,Bodega,Abarrotes,Mostrador + Delivery,Lima
 CLI_274989,Restaurante,Pollería,Delivery + Salón,Piura
-CLI_685137,Hotel,Turístico,Solo Alojamiento,Lima
-CLI_830780,Hotel,Hostal,Desayuno Incluido,Lima
-CLI_206457,Catering,Matrimonios,Off-Site,Arequipa
-CLI_449498,Ferretería,Industrial,Catálogo Online,Piura
-CLI_717812,Farmacia,Cadena,Autoservicio,Cusco
-CLI_396415,Restaurante,Criollo,Dark Kitchen,Lima
-CLI_393471,Farmacia,Cadena,Mostrador,Cusco
-CLI_284138,Restaurante,Marino,Para Llevar,Cusco
-CLI_597476,Bodega,Mixta,Autoservicio,Piura
-CLI_617066,Farmacia,Homeopática,Autoservicio,Cusco
-CLI_598768,Minimarket,Express,24 Horas,Lima
-CLI_660957,Ferretería,Mayorista,Catálogo Online,Piura
-CLI_191072,Bodega,Mixta,Mostrador,Cusco
-CLI_354931,Panadería,Integral,Local + Distribución,Lima
-CLI_210112,Farmacia,Naturista,Autoservicio,Lima
-CLI_609172,Supermercado,Gourmet,Online + Tienda,Lima
-CLI_829802,Hotel,Business,Todo Incluido,Piura
-CLI_310444,Bodega,Mixta,Mostrador + Delivery,Cusco
-CLI_296257,Bar,Sports Bar,Presencial,Arequipa
-CLI_062939,Ferretería,Industrial,Autoservicio,Piura
-CLI_404829,Farmacia,Homeopática,Drive-Thru,Lima
-CLI_583365,Restaurante,Vegetariano,Para Llevar,Arequipa
-CLI_533115,Restaurante,Criollo,Dark Kitchen,Arequipa
-CLI_588969,Catering,Matrimonios,Mixto,Cusco
-CLI_345066,Cafetería,Moderna,Co-Working,Lima
-CLI_964877,Ferretería,Industrial,Mostrador,Lima
-CLI_588419,Bar,Lounge,Presencial,Cusco
-CLI_176049,Ferretería,Mayorista,Autoservicio,Cusco
-CLI_767186,Restaurante,Carnes,Salón,Piura
-CLI_047609,Minimarket,Express,24 Horas,Cusco
-CLI_511766,Panadería,Pastelería,Local + Distribución,Piura
-CLI_719887,Panadería,Integral,Local Propio,Arequipa
-CLI_666804,Minimarket,Barrio,Tienda + Delivery,Lima
-CLI_264378,Hotel,Resort,Todo Incluido,Piura
-CLI_533388,Restaurante,Marino,Delivery + Salón,Piura
-CLI_913060,Fast Food,Tacos,Salón,Cusco
-CLI_824988,Restaurante,Buffet,Para Llevar,Piura
+CLI_776752,Minimarket,Gasolinera,Tienda + Delivery,Arequipa
+CLI_414404,Fast Food,Pollo,Delivery,Piura
+CLI_355532,Minimarket,Express,Tienda Física,Cusco
+CLI_949811,Panadería,Francesa,Local + Distribución,Cusco
+CLI_124793,Restaurante,Fusión,Dark Kitchen,Lima
+CLI_150139,Panadería,Francesa,Local Propio,Arequipa
+CLI_150882,Bodega,Barrio,Mostrador,Cusco
+CLI_004343,Restaurante,Fusión,Para Llevar,Cusco
+CLI_754448,Minimarket,Universitario,Tienda Física,Arequipa
+CLI_423598,Restaurante,Buffet,Dark Kitchen,Arequipa
+CLI_067366,Panadería,Industrial,Local + Distribución,Lima
+CLI_505148,Restaurante,Buffet,Dark Kitchen,Lima
+CLI_922885,Panadería,Integral,Local Propio,Lima
+CLI_408044,Supermercado,Orgánico,Online + Tienda,Arequipa
+CLI_952171,Minimarket,Barrio,Tienda Física,Cusco
+CLI_172018,Cafetería,Tradicional,Co-Working,Arequipa
+CLI_275473,Minimarket,Barrio,Tienda Física,Lima
+CLI_500690,Bodega,Abarrotes,Autoservicio,Lima
+CLI_734062,Bodega,Mixta,Mostrador + Delivery,Piura
+CLI_549404,Minimarket,24 Horas,Tienda Física,Arequipa
+CLI_092269,Panadería,Industrial,Local Propio,Piura
+CLI_075331,Panadería,Integral,Distribución,Piura
+CLI_258896,Cafetería,Temática,Salón + Delivery,Cusco
+CLI_293919,Bodega,Abarrotes,Autoservicio,Cusco
+CLI_487757,Restaurante,Chifa,Delivery,Lima
+CLI_638831,Fast Food,Árabe,Salón + Delivery,Lima
+CLI_420293,Restaurante,Italiano,Delivery,Lima
+CLI_829904,Hotel,Apart-hotel,Solo Alojamiento,Piura
+CLI_854565,Restaurante,Japonés,Salón,Piura
+CLI_198872,Restaurante,Criollo,Salón,Lima
+CLI_549690,Ferretería,Mayorista,Catálogo Online,Arequipa
+CLI_154507,Minimarket,Express,24 Horas,Lima
+CLI_401050,Bodega,Licorería,Mostrador + Delivery,Piura
+CLI_913060,Farmacia,Homeopática,Mostrador,Cusco
+CLI_982498,Supermercado,Orgánico,Solo Online,Arequipa
+CLI_767650,Fast Food,Pollo,Salón,Lima
+CLI_867080,Catering,Industrial,Off-Site,Cusco
+CLI_084648,Restaurante,Chifa,Dark Kitchen,Lima
+CLI_863974,Minimarket,Express,24 Horas,Arequipa
+CLI_075891,Panadería,Artesanal,Local Propio,Arequipa
+CLI_611015,Minimarket,Express,Tienda + Delivery,Arequipa
+CLI_133305,Bodega,Mixta,Mostrador,Piura
+CLI_841297,Restaurante,Fusión,Dark Kitchen,Arequipa
+CLI_535964,Restaurante,Vegetariano,Delivery + Salón,Piura
+CLI_202262,Restaurante,Chifa,Delivery + Salón,Arequipa
+CLI_480035,Supermercado,Mayorista,Tienda Física,Piura
+CLI_570011,Bodega,Mayorista,Mostrador + Delivery,Arequipa
+CLI_108906,Cafetería,Temática,Para Llevar,Cusco
+CLI_932869,Panadería,Artesanal,Distribución,Cusco
+CLI_197133,Catering,Eventos Corporativos,On-Site,Cusco
+CLI_758212,Farmacia,Cadena,Mostrador,Arequipa
+CLI_820460,Catering,Social,Mixto,Cusco
+CLI_443367,Supermercado,Orgánico,Online + Tienda,Cusco
+CLI_676284,Minimarket,Universitario,24 Horas,Piura
+CLI_859351,Minimarket,Gasolinera,24 Horas,Lima
+CLI_205344,Bodega,Mixta,Autoservicio,Arequipa
+CLI_312630,Supermercado,Gourmet,Online + Tienda,Lima
+CLI_135362,Supermercado,Formato Mediano,Tienda Física,Arequipa
+CLI_977902,Restaurante,Buffet,Delivery,Arequipa
+CLI_870699,Supermercado,Mayorista,Online + Tienda,Cusco
+CLI_255483,Bodega,Mayorista,Autoservicio,Lima
+CLI_762453,Bodega,Mayorista,Autoservicio,Piura
+CLI_883464,Bodega,Barrio,Autoservicio,Arequipa
+CLI_791936,Bodega,Barrio,Mostrador + Delivery,Cusco
+CLI_034396,Ferretería,Especializada,Autoservicio,Arequipa
+CLI_186019,Restaurante,Pollería,Dark Kitchen,Cusco
+CLI_600518,Bodega,Mayorista,Autoservicio,Cusco

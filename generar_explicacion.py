@@ -602,57 +602,351 @@ doc.add_page_break()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 7 — Cómo se combinan
+# SECCIÓN 7 — Cómo se combinan (con datos REALES del dataset — UMBRAL_NOVEDAD=365)
 # ══════════════════════════════════════════════════════════════════════════════
 
-titulo(doc, "7. Cómo se combinan los 5 componentes", 1)
+titulo(doc, "7. Cómo se combinan los 5 componentes — Ejemplo real del dataset", 1)
 
-parrafo(doc, "Ejemplo paso a paso para el cliente CLI_000001 y el producto PROD_000234 (Leche entera 1L):", bold=True)
+parrafo(doc,
+    "Este capítulo usa datos reales extraídos del sistema en ejecución con UMBRAL_NOVEDAD=365. "
+    "No son números inventados: son los scores exactos que devuelve la API al consultar "
+    "el endpoint /recomendar/dashboard/CLI_074755.")
+
+separador(doc)
+
+# ── Perfil del cliente ────────────────────────────────────────────────────────
+titulo(doc, "7.1 El cliente: CLI_074755 — Hostal, Piura", 2)
 
 tabla_simple(doc,
-    ["Componente", "Valor calculado", "× Peso", "= Aporte al score"],
+    ["Dato del cliente", "Valor real"],
     [
-        ("CF (historial de compras)", "0.891", "× 0.40", "= 0.356"),
-        ("CBF (similitud de características)", "0.720", "× 0.15", "= 0.108"),
-        ("Urgencia (7 días para vencer)", "0.923", "× 0.20", "= 0.185"),
-        ("Rotación (baja rotación)", "0.600", "× 0.15", "= 0.090"),
-        ("Novedad (producto normal, no nuevo)", "0.050", "× 0.10", "= 0.005"),
-        ("TOTAL — score_final", "", "", "= 0.744"),
+        ("ID", "CLI_074755"),
+        ("Tipo de negocio", "Hotel — Hostal"),
+        ("Ciudad", "Piura"),
+        ("Período de compras", "Enero 2025 — Febrero 2026 (1 año)"),
+        ("Total de líneas de compra", "94  (el cliente más activo del dataset)"),
+        ("Productos únicos comprados", "45 de 950 (el 4.7% del catálogo)"),
+        ("Ticket promedio por pedido", "S/ 1,741.23"),
+        ("Frecuencia de compra", "1.29 pedidos por semana"),
     ],
-    col_widths=[2.5, 1.5, 1.2, 1.8]
+    col_widths=[2.5, 4.0]
+)
+
+separador(doc)
+parrafo(doc, "Sus categorías más compradas (unidades totales):", bold=True)
+
+tabla_simple(doc,
+    ["Categoría", "Unidades", "Por qué lo compra un hostal"],
+    [
+        ("Abarrotes",  "469", "Insumos de cocina para el desayuno y servicio diario"),
+        ("Verduras",   "155", "Preparaciones frescas para el comedor"),
+        ("Frutas",     "108", "Desayunos buffet — alta demanda"),
+        ("Limpieza",   "108", "Habitaciones, baños y áreas comunes"),
+        ("Lácteos",    "93",  "Leche, yogurt, mantequilla para el desayuno"),
+        ("Snacks",     "75",  "Minibar y tienda del hostal"),
+        ("Bebidas",    "42",  "Bar y servicio a la habitación"),
+        ("Congelados", "14",  "Compra ocasional"),
+        ("Carnes",     "10",  "Compra muy baja — se abastece por otro canal"),
+    ],
+    col_widths=[1.5, 0.9, 4.1]
+)
+
+separador(doc)
+parrafo(doc, "Productos que el cliente HA COMPRADO del dashboard:", bold=True)
+
+cuadro_gris(doc,
+    "De los 15 productos recomendados en el dashboard, solo 1 ha sido comprado antes:\n\n"
+    "  PROD_285117 (Frutas): 48 unidades en 1 pedido\n\n"
+    "Los 14 restantes son descubrimientos — el modelo los recomienda porque clientes\n"
+    "similares (otros hostales de Piura) los compran, o porque el perfil del hostal\n"
+    "es compatible con esos productos.")
+
+doc.add_page_break()
+
+# ── Los 3 productos a analizar ────────────────────────────────────────────────
+titulo(doc, "7.2 Los 3 productos elegidos para el análisis detallado", 2)
+
+parrafo(doc,
+    "Se eligieron 3 productos del top urgentes porque cada uno representa "
+    "un caso distinto: uno con historial, uno sin historial pero nuevo y con baja "
+    "rotación, y uno también nuevo con baja rotación pero más caro. "
+    "Así se puede ver cómo cada componente toma protagonismo en distintos escenarios.")
+
+separador(doc)
+
+tabla_simple(doc,
+    ["Campo", "PROD_285117", "PROD_242217", "PROD_087513"],
+    [
+        ("Categoría",              "Frutas",         "Carnes",           "Lácteos"),
+        ("Precio unitario",        "S/ 4.02",        "S/ 127.09",        "S/ 35.92"),
+        ("Stock disponible",       "272 unidades",   "237 unidades",     "165 unidades"),
+        ("Días para vencer",       "2 días",         "4 días",           "2 días"),
+        ("Rotación diaria",        "1.93 unid/día",  "0.29 unid/día",    "0.56 unid/día"),
+        ("¿Baja rotación?",        "NO",             "SÍ",               "SÍ"),
+        ("Días en catálogo",       "1,536 días",     "192 días",         "148 días"),
+        ("¿Es nuevo? (<=365d)",    "NO",             "SÍ",               "SÍ"),
+        ("¿Cliente lo ha comprado?","SÍ — 48 unidades","NUNCA",          "NUNCA"),
+        ("Score final (API real)", "0.4768  #1",     "0.3387  #2",       "0.3371  #3"),
+    ],
+    col_widths=[2.0, 1.7, 1.7, 1.7]
 )
 
 parrafo(doc,
-    "Este score de 0.744 se compara con los scores de los otros 949 productos. "
-    "Los 10 con mayor score son los que se recomiendan al cliente.")
+    "La brecha entre el #1 (0.4768) y el #2 (0.3387) es enorme: 0.1381 puntos. "
+    "El CF de PROD_285117 domina completamente. Veamos por qué.",
+    italic=True, color=(0x40, 0x40, 0x40))
 
-separador(doc)
-titulo(doc, "¿Qué pasa cuando hay conflicto entre componentes?", 2)
+doc.add_page_break()
+
+# ── Cálculo detallado ─────────────────────────────────────────────────────────
+titulo(doc, "7.3 El cálculo completo — score por score", 2)
 
 cuadro_gris(doc,
-    "Caso: producto urgente que al cliente no le gusta\n\n"
-    "• CF = 0.10 (el cliente casi nunca lo ha comprado)\n"
-    "• Urgencia = 0.98 (vence en 2 días)\n"
-    "• score_final = 0.10×0.40 + 0.98×0.20 = 0.04 + 0.196 = 0.236\n\n"
-    "Conclusión: aún con máxima urgencia, un producto que no le gusta al cliente\n"
-    "no llega al top-10. El sistema NO fuerza productos incompatibles.")
+    "score_final = (CF × 0.40) + (CBF × 0.15) + (Urgency × 0.20) + (Rotation × 0.15) + (Novelty × 0.10)")
 
 separador(doc)
+
+# Producto 1
+titulo(doc, "Producto #1: PROD_285117 — Frutas, S/ 4.02, vence en 2 días", 3)
+parrafo(doc, "El cliente LO HA COMPRADO antes: 48 unidades. Buena rotación (1.93/día). Lleva 1,536 dias en catálogo.", italic=True)
+
+tabla_simple(doc,
+    ["Componente", "Score API", "× Peso", "= Aporte", "Por qué este valor"],
+    [
+        ("CF — historial + clientes similares", "0.6639", "× 0.40", "= 0.2656",
+         "El cliente compró este producto antes Y otros hostales en Piura lo compran mucho. Score muy alto."),
+        ("CBF — similitud de características", "0.3138", "× 0.15", "= 0.0471",
+         "Frutas es compatible con el hostal, pero el cliente compra más abarrotes. Similitud media."),
+        ("Urgency — días para vencer", "0.4667", "× 0.20", "= 0.0933",
+         "Vence en 2 días → urgencia alta."),
+        ("Rotation — stock parado", "0.4722", "× 0.15", "= 0.0708",
+         "Rota 1.93/día → no es baja rotación. Score de rotación medio."),
+        ("Novelty — nuevo en catálogo", "0.0000", "× 0.10", "= 0.0000",
+         "Lleva 1,536 días en catálogo. No es nuevo (1,536 > 365)."),
+        ("SCORE FINAL", "—", "—", "= 0.4768", "El CF solo aporta el 55.7% del score total."),
+    ],
+    col_widths=[2.0, 0.8, 0.7, 0.7, 2.3]
+)
+separador(doc)
+
+# Producto 2
+titulo(doc, "Producto #2: PROD_242217 — Carnes, S/ 127.09, vence en 4 días", 3)
+parrafo(doc, "NUNCA comprado. Baja rotación (0.29/día). 192 dias en catálogo (es NUEVO segun umbral 365). Es urgente, nuevo y baja rotacion a la vez.", italic=True)
+
+tabla_simple(doc,
+    ["Componente", "Score API", "× Peso", "= Aporte", "Por qué este valor"],
+    [
+        ("CF — historial + clientes similares", "0.1203", "× 0.40", "= 0.0481",
+         "Nunca comprado. Afinidad inferida: otros hostales en Piura compran carnes ocasionalmente."),
+        ("CBF — similitud de características", "0.4212", "× 0.15", "= 0.0632",
+         "Carnes es compatible con un hostal que tiene comedor. Score CBF alto."),
+        ("Urgency — días para vencer", "0.4337", "× 0.20", "= 0.0867",
+         "Vence en 4 días → urgencia alta."),
+        ("Rotation — stock parado", "0.9367", "× 0.15", "= 0.1405",
+         "0.29 unid/día → muy baja rotacion. Segundo score de rotacion mas alto de los tres."),
+        ("Novelty — nuevo en catálogo", "0.0017", "× 0.10", "= 0.0002",
+         "192 dias en catalogo → es 'nuevo' (192 <= 365) pero su score de novedad ya decayó mucho."),
+        ("SCORE FINAL", "—", "—", "= 0.3387", "Llega al #2 por la combinación CBF + rotation."),
+    ],
+    col_widths=[2.0, 0.8, 0.7, 0.7, 2.3]
+)
+separador(doc)
+
+# Producto 3
+titulo(doc, "Producto #3: PROD_087513 — Lácteos, S/ 35.92, vence en 2 días", 3)
+parrafo(doc, "NUNCA comprado. Baja rotacion (0.56/día). 148 dias en catálogo (es NUEVO). Es urgente, nuevo y baja rotacion a la vez.", italic=True)
+
+tabla_simple(doc,
+    ["Componente", "Score API", "× Peso", "= Aporte", "Por qué este valor"],
+    [
+        ("CF — historial + clientes similares", "0.1211", "× 0.40", "= 0.0484",
+         "Nunca comprado. CF similar al de PROD_242217: ambos son desconocidos para el cliente."),
+        ("CBF — similitud de características", "0.4367", "× 0.15", "= 0.0655",
+         "Lácteos encaja muy bien con un hostal que sirve desayunos. Score CBF alto."),
+        ("Urgency — días para vencer", "0.4667", "× 0.20", "= 0.0933",
+         "Vence en 2 días → urgencia alta (igual que PROD_285117)."),
+        ("Rotation — stock parado", "0.8607", "× 0.15", "= 0.1291",
+         "0.56 unid/día → baja rotación. Aunque rota más que PROD_242217, sigue siendo bajo."),
+        ("Novelty — nuevo en catálogo", "0.0072", "× 0.10", "= 0.0007",
+         "148 dias en catalogo → es 'nuevo' (148 <= 365). Score algo mayor que PROD_242217."),
+        ("SCORE FINAL", "—", "—", "= 0.3371", "Queda #3, apenas 0.0016 puntos por debajo del #2."),
+    ],
+    col_widths=[2.0, 0.8, 0.7, 0.7, 2.3]
+)
+
+doc.add_page_break()
+
+# ── Comparación directa ───────────────────────────────────────────────────────
+titulo(doc, "7.4 Comparación directa de los 3 productos", 2)
+
+tabla_simple(doc,
+    ["Componente", "Peso", "PROD_285117\n(Frutas, comprado)", "PROD_242217\n(Carnes, nuevo)", "PROD_087513\n(Lácteos, nuevo)"],
+    [
+        ("CF — afinidad",         "40%", "0.2656 ★★★", "0.0481",      "0.0484"),
+        ("CBF — similitud",       "15%", "0.0471",      "0.0632",      "0.0655 ★"),
+        ("Urgency — vencimiento", "20%", "0.0933 ★",    "0.0867",      "0.0933 ★"),
+        ("Rotation — parado",     "15%", "0.0708",      "0.1405 ★",    "0.1291"),
+        ("Novelty — nuevo",       "10%", "0.0000",      "0.0002",      "0.0007 ★"),
+        ("SCORE FINAL",          "100%", "0.4768 🥇",   "0.3387 🥈",   "0.3371 🥉"),
+    ],
+    col_widths=[1.8, 0.6, 1.7, 1.7, 1.7]
+)
+parrafo(doc, "★ = valor mas alto en esa fila", italic=True, color=(0x60, 0x60, 0x60))
+
+separador(doc)
+
 cuadro_gris(doc,
-    "Caso: producto que le encanta al cliente pero está sin problemas de inventario\n\n"
-    "• CF = 0.95 (compra frecuente)\n"
-    "• Urgencia = 0.02 (vence en 180 días)\n"
-    "• score_final = 0.95×0.40 + 0.02×0.20 = 0.38 + 0.004 = 0.384+CBF+rotación\n\n"
-    "Conclusión: un producto favorito siempre puede aparecer en el top-10,\n"
-    "independientemente del estado del inventario.")
+    "POR QUE GANA PROD_285117 A PESAR DE VENCER EN 2 DIAS (igual que PROD_087513):\n\n"
+    "La diferencia la hace el CF: 0.2656 vs 0.0484 — una brecha de 0.2172 puntos.\n"
+    "Eso equivale a 0.2172 × 0.40 = 0.087 puntos de ventaja solo por CF.\n\n"
+    "PROD_087513 intenta compensar con mejor Rotation (0.1291 vs 0.0708 = +0.058)\n"
+    "y mejor CBF (0.0655 vs 0.0471 = +0.018), pero la suma de esas mejoras (0.076)\n"
+    "no alcanza para superar la ventaja del CF (0.087).\n\n"
+    "Conclusion: cuando un producto tiene historial de compra fuerte, es muy dificil\n"
+    "que un producto desconocido lo desplace del top, incluso con urgencia maxima.")
 
 separador(doc)
-titulo(doc, "Los filtros duros (excluyentes)", 2)
+
+cuadro_gris(doc,
+    "POR QUE PROD_242217 (Carnes, S/127.09) SUPERA A PROD_087513 (Lacteos, S/35.92)\n"
+    "si ambos son nuevos y nunca comprados:\n\n"
+    "El rotation score de PROD_242217 es 0.1405 vs 0.1291 de PROD_087513.\n"
+    "Diferencia: 0.0114 puntos. Eso inclina la balanza porque:\n"
+    "  PROD_242217 rota 0.29 unid/dia vs 0.56 unid/dia de PROD_087513\n"
+    "  → PROD_242217 esta mas parado → el sistema lo empuja con más fuerza.\n\n"
+    "El precio alto de PROD_242217 (S/127.09) no penaliza directamente al score;\n"
+    "el sistema recomienda por afinidad y urgencia de negocio, no por precio.")
+
+doc.add_page_break()
+
+# ── Triple clasificación ──────────────────────────────────────────────────────
+titulo(doc, "7.5 El caso especial: productos que califican en 3 secciones a la vez", 2)
+
 parrafo(doc,
-    "Antes de calcular los scores, el sistema excluye automáticamente:")
-viñeta(doc, "Productos sin stock (stock = 0)")
-viñeta(doc, "Productos vencidos (dias_para_vencer < 0)")
-viñeta(doc, "Productos de otra sede (un cliente de Lima no recibe productos de Cusco)")
+    "PROD_242217 y PROD_087513 tienen algo inusual: califican simultáneamente "
+    "como urgentes, baja rotación Y nuevos. ¿En qué sección aparecen?")
+
+tabla_simple(doc,
+    ["Producto", "¿Urgente?", "¿Baja rotación?", "¿Nuevo (<=365d)?", "¿Dónde aparece?"],
+    [
+        ("PROD_285117", "SI (2 días)", "NO",             "NO (1,536 días)", "URGENTES #1"),
+        ("PROD_242217", "SI (4 días)", "SI (0.29/día)",  "SI (192 días)",   "URGENTES #2"),
+        ("PROD_087513", "SI (2 días)", "SI (0.56/día)",  "SI (148 días)",   "URGENTES #3"),
+    ],
+    col_widths=[1.5, 1.0, 1.3, 1.5, 1.7]
+)
+
+cuadro_gris(doc,
+    "El sistema aplica una cascada de prioridad para evitar duplicados:\n\n"
+    "  1. Urgentes  (prioridad maxima)\n"
+    "  2. Baja rotacion  (excluye los ya en urgentes)\n"
+    "  3. Nuevos  (excluye los ya en las dos secciones anteriores)\n\n"
+    "PROD_242217 podría aparecer en las 3 secciones, pero solo aparece en URGENTES.\n"
+    "Esto es correcto: el argumento de venta más poderoso para el vendedor es\n"
+    "'vence en 4 días' — no 'está parado' ni 'es nuevo'.")
+
+separador(doc)
+
+titulo(doc, "7.6 La sección Nuevos — cómo funciona con UMBRAL_NOVEDAD = 365", 2)
+
+parrafo(doc,
+    "Con UMBRAL_NOVEDAD = 365, un producto se considera 'nuevo' si fue incorporado "
+    "al catálogo hace 365 días o menos. Esto permite que la sección Nuevos tenga "
+    "contenido real, ya que el dataset sintético no tiene productos de menos de 60 días.")
+
+tabla_simple(doc,
+    ["Producto en sección Nuevos", "Categoría", "Días en catálogo", "¿Por qué aquí y no en urgentes?"],
+    [
+        ("PROD_815418", "Panadería",  "351 días", "Ya estaba como urgente/baja rotación en otra llamada interna — la cascada lo dejó para Nuevos"),
+        ("PROD_669573", "Panadería",  "167 días", "Tambien urgente, pero el pool de urgentes ya tenia 5 productos con scores mas altos"),
+        ("PROD_008829", "Verduras",   "266 días", "Idem — score suficiente para Nuevos tras la cascada"),
+        ("PROD_174901", "Lácteos",    "251 días", "Idem"),
+        ("PROD_602292", "Frutas",     "256 días", "Idem"),
+    ],
+    col_widths=[1.5, 1.0, 1.2, 3.0]
+)
+
+cuadro_gris(doc,
+    "Nota sobre score_novelty vs es_nuevo_catalogo:\n\n"
+    "El score_novelty (componente de la formula) usa decaimiento exponencial con\n"
+    "vida media de 30 dias. Para un producto de 256 dias:\n"
+    "  score_novelty = e^(-256/30) = 0.000197  (casi cero)\n\n"
+    "Pero es_nuevo_catalogo = True porque 256 <= 365 (el umbral de clasificacion).\n\n"
+    "Son dos cosas distintas:\n"
+    "  • es_nuevo_catalogo → decide en que SECCION aparece el producto\n"
+    "  • score_novelty → cuanto SUBE el score final (muy poco despues de 60 dias)\n\n"
+    "En la seccion Nuevos, lo que impulsa el score es principalmente CF y Rotation,\n"
+    "no el score de novedad. La novedad es solo la etiqueta de la seccion.")
+
+doc.add_page_break()
+
+# ── Dashboard completo ────────────────────────────────────────────────────────
+titulo(doc, "7.7 El dashboard completo — 15 productos reales", 2)
+
+parrafo(doc,
+    "Resultado real del endpoint GET /recomendar/dashboard/CLI_074755?top_k=5 "
+    "con UMBRAL_NOVEDAD = 365 (valor actual del sistema):")
+
+parrafo(doc, "URGENTES — top 5 (productos que vencen en <= 30 dias):", bold=True, color=(0xC0, 0x00, 0x00))
+
+tabla_simple(doc,
+    ["#", "Producto", "Cat.", "Precio", "Dias/vencer", "Rotac./dia", "Nuevo", "Score"],
+    [
+        ("1", "PROD_285117", "Frutas",   "S/4.02",   "2",  "1.93", "No",  "0.4768"),
+        ("2", "PROD_242217", "Carnes",   "S/127.09", "4",  "0.29", "Si",  "0.3387"),
+        ("3", "PROD_087513", "Lacteos",  "S/35.92",  "2",  "0.56", "Si",  "0.3371"),
+        ("4", "PROD_594009", "Verduras", "S/6.72",   "2",  "0.32", "No",  "0.3355"),
+        ("5", "PROD_561973", "Verduras", "S/20.14",  "0",  "0.37", "No",  "0.3353"),
+    ],
+    col_widths=[0.3, 1.3, 0.9, 0.8, 0.9, 0.9, 0.6, 0.8]
+)
+
+parrafo(doc, "BAJA ROTACION — top 5 (excluye los 5 urgentes):", bold=True, color=(0xBF, 0x8F, 0x00))
+
+tabla_simple(doc,
+    ["#", "Producto", "Cat.", "Precio", "Dias/vencer", "Rotac./dia", "Nuevo", "Score"],
+    [
+        ("1", "PROD_962914", "Lacteos",  "S/18.84",  "3",  "0.47", "No",  "0.3291"),
+        ("2", "PROD_822162", "Verduras", "S/6.44",   "4",  "0.39", "No",  "0.3248"),
+        ("3", "PROD_128264", "Verduras", "S/11.93",  "4",  "0.42", "No",  "0.3232"),
+        ("4", "PROD_047797", "Carnes",   "S/77.68",  "3",  "0.36", "No",  "0.3207"),
+        ("5", "PROD_285388", "Verduras", "S/14.85",  "0",  "0.46", "No",  "0.3162"),
+    ],
+    col_widths=[0.3, 1.3, 0.9, 0.8, 0.9, 0.9, 0.6, 0.8]
+)
+
+parrafo(doc, "NUEVOS — top 5 (excluye los 10 anteriores, dias_en_catalogo <= 365):", bold=True, color=(0x05, 0x96, 0x69))
+
+tabla_simple(doc,
+    ["#", "Producto", "Cat.", "Precio", "Dias/vencer", "Dias catálogo", "Rotac./dia", "Score"],
+    [
+        ("1", "PROD_815418", "Panaderia", "S/4.96",   "2",  "351", "0.68", "0.3222"),
+        ("2", "PROD_669573", "Panaderia", "S/27.11",  "2",  "167", "0.89", "0.3217"),
+        ("3", "PROD_008829", "Verduras",  "S/9.98",   "2",  "266", "0.61", "0.3196"),
+        ("4", "PROD_174901", "Lacteos",   "S/6.71",   "4",  "251", "0.71", "0.3105"),
+        ("5", "PROD_602292", "Frutas",    "S/28.52",  "10", "256", "0.79", "0.3014"),
+    ],
+    col_widths=[0.3, 1.3, 0.9, 0.8, 0.9, 0.9, 0.7, 0.7]
+)
+
+separador(doc)
+
+titulo(doc, "7.8 Los filtros duros — lo que el sistema rechazó antes de calcular", 2)
+
+tabla_simple(doc,
+    ["Filtro", "Criterio", "Impacto en CLI_074755 (Piura)"],
+    [
+        ("Sin stock",       "stock = 0",               "Productos agotados en Piura excluidos automaticamente"),
+        ("Vencidos",        "dias_para_vencer < 0",    "Excluidos. dias=0 (vence hoy) SI se incluye — ver PROD_561973 y PROD_285388"),
+        ("Sede incorrecta", "sede != Piura",            "Productos de Lima, Arequipa o Cusco excluidos — el cliente es de Piura"),
+    ],
+    col_widths=[1.4, 1.8, 3.4]
+)
+
+cuadro_gris(doc,
+    "Atencion: PROD_962914 (Lacteos) aparece en Baja Rotacion con solo 5 unidades en stock.\n"
+    "El sistema lo incluye porque stock=5 > 0. El vendedor debe advertir al cliente\n"
+    "que solo hay 5 unidades disponibles antes de tomar el pedido.")
 
 doc.add_page_break()
 
@@ -955,7 +1249,7 @@ set_font(r_sub2, size=11, color=(0x90, 0x90, 0x90))
 output_path = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     "docs",
-    "explicacion_sistema_recomendacion.docx"
+    "explicacion_sistema_recomendacion_v3.docx"
 )
 doc.save(output_path)
 print(f"Documento guardado en: {output_path}")

@@ -123,7 +123,7 @@ Las recomendaciones aparecen en tres pestañas o secciones:
 |---|---|---|
 | Próximos a vencer | 🔴 Rojo | Productos con menos de 30 días de vida útil, ordenados por afinidad |
 | Baja rotación | 🟡 Amarillo | Productos que se mueven poco en el inventario |
-| Nuevos | 🟢 Verde | Productos incorporados al catálogo en los últimos 60 días |
+| Nuevos | 🟢 Verde | Productos incorporados al catálogo en los últimos 365 días |
 
 Cada tarjeta de producto muestra:
 - Nombre y categoría
@@ -248,11 +248,11 @@ cliente tiene mayor probabilidad de comprar.
 ### 4.6 Productos nuevos
 
 ```bash
-# Con umbral por defecto (60 días)
+# Con umbral por defecto (365 días)
 curl http://localhost:8000/recomendar/nuevos/CLI_000001
 
-# Más restrictivo: solo los últimos 30 días
-curl "http://localhost:8000/recomendar/nuevos/CLI_000001?umbral_dias_novedad=30"
+# Más restrictivo: solo los últimos 90 días
+curl "http://localhost:8000/recomendar/nuevos/CLI_000001?umbral_dias_novedad=90"
 ```
 
 Devuelve productos ingresados recientemente al catálogo, ordenados por afinidad.
@@ -365,7 +365,7 @@ W_NOVELTY   = 0.10
 
 # Umbrales de clasificación
 UMBRAL_URGENCIA = 30   # días para considerar "urgente"
-UMBRAL_NOVEDAD  = 60   # días para considerar "nuevo"
+UMBRAL_NOVEDAD  = 365  # días para considerar "nuevo"
 
 # Parámetros del modelo
 SVD_COMPONENTS     = 150   # dimensión latente (más → más memoria, más precisión)

@@ -110,7 +110,7 @@ def api_dashboard(cliente_id: str, top_k: int = 5) -> dict | None:
     try:
         r = requests.get(
             f"{API_BASE}/recomendar/dashboard/{cliente_id}",
-            params={"top_k": top_k, "umbral_dias_novedad": 365},  # max permitido
+            params={"top_k": top_k},
             timeout=10,
         )
         return r.json() if r.status_code == 200 else None

@@ -65,7 +65,7 @@ SVD_COMPONENTS = 150
 UMBRAL_URGENCIA = 30
 
 # Umbral para clasificar un producto como "nuevo" (días desde ingreso)
-UMBRAL_NOVEDAD = 60
+UMBRAL_NOVEDAD = 365
 
 # Candidatos pre-filtrados por CF antes de aplicar los demás scores
 TOPK_CF_CANDIDATES = 500
