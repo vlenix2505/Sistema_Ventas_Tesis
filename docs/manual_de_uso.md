@@ -14,12 +14,12 @@ pip install -r requirements.txt
 
 ---
 
-## 2. Flujo Completo: de Cero a API
+## 2. Flujo Completo: de Cero a Sistema Activo
 
 ### Paso 1 — Generar datos sintéticos
 
 ```bash
-python generate_source.py
+python src/generate_source.py
 ```
 
 Genera en `data/raw/`:
@@ -53,19 +53,22 @@ jupyter notebook notebooks/02_modelo_recomendacion.ipynb
 Ejecutar **todas las celdas en orden**.
 
 Genera:
-- `models/recommender_model.joblib` — modelo serializado
-- `models/visualizaciones_modelo.png` — gráficas de evaluación
+- Métricas de evaluación en pantalla (HitRate, Precision, Coverage)
+- `data/processed/01_dataset_visualizaciones.png` — gráficas del dataset
 
 Tiempo estimado: 3-8 minutos (SVD + cálculo de similitud coseno).
 
-### Paso 4 — Iniciar la API
+> **Nota:** el modelo NO requiere ser pre-entrenado y guardado en disco.
+> El servidor FastAPI lo entrena en memoria al arrancar (~1 segundo).
+
+### Paso 4 — Iniciar el backend (Terminal 1)
 
 ```bash
 # Desde la raíz del proyecto
-uvicorn api.main:app --reload --port 8000
+python -m uvicorn api.main:app --reload --port 8000
 ```
 
-La API carga el modelo automáticamente al arrancar.
+La API entrena el modelo automáticamente al arrancar.
 
 Verificar que está activa:
 ```bash
@@ -83,19 +86,74 @@ Respuesta esperada:
 }
 ```
 
+### Paso 5 — Iniciar el frontend Streamlit (Terminal 2)
+
+```bash
+python -m streamlit run app/streamlit_app.py
+```
+
+Abrir en el navegador: `http://localhost:8501`
+
+> El frontend requiere que el backend esté corriendo en `localhost:8000`.
+> Siempre arrancar el backend **antes** que el frontend.
+
 ---
 
-## 3. Usar los Endpoints
+## 3. Usar el Frontend (Streamlit)
+
+La interfaz Streamlit simula la pantalla de un vendedor en campo.
+
+### 3.1 Login
+
+Al abrir `http://localhost:8501` verás una pantalla de login.
+Selecciona cualquiera de los 5 vendedores de muestra y haz clic en "Ingresar".
+
+### 3.2 Seleccionar un cliente
+
+En el panel lateral izquierdo:
+- Escribe el nombre o rubro del cliente en el buscador
+- O selecciona directamente de la lista desplegable
+- El sistema carga automáticamente las recomendaciones del cliente seleccionado
+
+### 3.3 Ver recomendaciones
+
+Las recomendaciones aparecen en tres pestañas o secciones:
+
+| Sección | Color | Qué muestra |
+|---|---|---|
+| Próximos a vencer | 🔴 Rojo | Productos con menos de 30 días de vida útil, ordenados por afinidad |
+| Baja rotación | 🟡 Amarillo | Productos que se mueven poco en el inventario |
+| Nuevos | 🟢 Verde | Productos incorporados al catálogo en los últimos 60 días |
+
+Cada tarjeta de producto muestra:
+- Nombre y categoría
+- Precio unitario
+- Stock disponible
+- Días para vencer (si aplica)
+- Score de recomendación
+
+### 3.4 Agregar al carrito
+
+Haz clic en "Agregar" en cualquier tarjeta de producto.
+El carrito en el panel derecho se actualiza en tiempo real con cantidad y subtotal.
+
+### 3.5 Filtrar por categoría
+
+Usa el selector de categorías (Lácteos, Bebidas, Carnes, etc.) para
+ver solo los productos de una categoría específica dentro de cada sección.
+
+---
+
+## 4. Usar los Endpoints de la API
 
 ### Documentación interactiva
 
 Abrir en el navegador: `http://localhost:8000/docs`
 
-Permite probar cada endpoint directamente desde el navegador.
+Permite probar cada endpoint directamente desde el navegador sin necesidad de código.
 
-### 3.1 Obtener un cliente_id válido
+### 4.1 Obtener un cliente_id válido
 
-Para probar, necesitas un `cliente_id` que exista en el dataset.
 Formato: `CLI_XXXXXX` (e.g., `CLI_000001`).
 
 Puedes obtener una lista de clientes ejecutando en Python:
@@ -105,7 +163,7 @@ df = pd.read_csv("data/processed/dataset_ml.csv")
 print(df["cliente_id"].unique()[:10])
 ```
 
-### 3.2 Recomendación general
+### 4.2 Recomendación general
 
 ```bash
 curl http://localhost:8000/recomendar/CLI_000001
@@ -114,7 +172,20 @@ curl http://localhost:8000/recomendar/CLI_000001
 Devuelve el top-10 de productos con mayor score híbrido para el cliente.
 Mezcla los tres tipos (urgentes, baja rotación, nuevos) según sus pesos.
 
-### 3.3 Productos próximos a vencer
+### 4.3 Dashboard unificado
+
+```bash
+curl http://localhost:8000/recomendar/dashboard/CLI_000001
+```
+
+Devuelve las tres secciones en una sola llamada, sin duplicados entre secciones.
+Los productos urgentes tienen prioridad; si ya aparecen ahí, no se repiten en baja rotación.
+
+**Cuándo usar este endpoint:**
+- Para alimentar la pantalla principal del frontend
+- Cuando se necesita mostrar las tres categorías a la vez sin redundancia
+
+### 4.4 Productos próximos a vencer
 
 ```bash
 # Con umbral por defecto (30 días)
@@ -150,12 +221,12 @@ curl "http://localhost:8000/recomendar/proximos-vencer/CLI_000001?umbral_dias=7"
 ```
 
 - `total_urgentes_catalogo = 41`: hay 41 productos urgentes en el catálogo
-- `top_k = 5`: se recomendaron 5 (puede ser menor si el cliente solo tiene afinidad con 5 urgentes disponibles en su sede)
+- `top_k = 5`: se recomendaron 5 (puede ser menor si el cliente solo tiene afinidad con algunos urgentes disponibles en su sede)
 - `score_urgency = 0.9234`: producto muy urgente (solo 7 días)
 - `score_cf = 0.8910`: alta afinidad histórica del cliente con este producto
 - `score_final = 0.7823`: score combinado — el más alto de su lista
 
-### 3.4 Productos de baja rotación
+### 4.5 Productos de baja rotación
 
 ```bash
 curl http://localhost:8000/recomendar/baja-rotacion/CLI_000001
@@ -174,7 +245,7 @@ cliente tiene mayor probabilidad de comprar.
 - `score_rotation`: `1 - normalize(rotacion_diaria)`. Alto = muy poca rotación.
 - `umbral_rotacion_percentil: 0.25`: se incluyen los productos en el cuartil inferior
 
-### 3.5 Productos nuevos
+### 4.6 Productos nuevos
 
 ```bash
 # Con umbral por defecto (60 días)
@@ -193,11 +264,11 @@ Devuelve productos ingresados recientemente al catálogo, ordenados por afinidad
 
 ---
 
-## 4. Métricas del Modelo — Cómo Interpretarlas
+## 5. Métricas del Modelo — Cómo Interpretarlas
 
 Las métricas se calculan en el notebook 02, sección "Evaluación del Modelo".
 
-### 4.1 Métricas estándar de recomendación
+### 5.1 Métricas estándar de recomendación
 
 | Métrica | Fórmula | Qué mide | Valor aceptable |
 |---|---|---|---|
@@ -209,7 +280,7 @@ Las métricas se calculan en el notebook 02, sección "Evaluación del Modelo".
 **Nota sobre valores bajos:** Con una densidad de matriz del 0.15% (muy sparse),
 HitRate@10 = 0.15 ya es un buen resultado. Un sistema aleatorio daría ~0.01.
 
-### 4.2 Métricas de negocio (las más importantes para la tesis)
+### 5.2 Métricas de negocio (las más importantes para la tesis)
 
 | Métrica | Qué mide | Valor aceptable |
 |---|---|---|
@@ -221,7 +292,7 @@ Urgency Coverage = 0.80, significa que el 80% de los productos próximos a vence
 están siendo recomendados activamente a clientes con afinidad, lo que maximiza
 la probabilidad de reducir la merma.
 
-### 4.3 Análisis de sensibilidad
+### 5.3 Análisis de sensibilidad
 
 El notebook compara 4 escenarios de pesos:
 
@@ -237,16 +308,16 @@ conviene ajustar los pesos según la temporada o la situación del inventario.
 
 ---
 
-## 5. ¿Cómo Saber si el Modelo Está Funcionando Correctamente?
+## 6. ¿Cómo Saber si el Sistema Está Funcionando Correctamente?
 
 ### Checklist de validación
 
-| Verificación | Comando | Resultado esperado |
-|---|---|---|
-| Dataset generado | `wc -l data/raw/clientes.csv` | 801 líneas (800 + header) |
-| Dataset ML listo | `python -c "import pandas as pd; df=pd.read_csv('data/processed/dataset_ml.csv'); print(df.shape, df.isnull().sum().sum())"` | `(290064, 28) 0` |
-| API activa | `curl localhost:8000/health` | `"status": "ok"` |
-| Modelo cargado | Revisar logs de uvicorn | `Modelo listo. Clientes: 800 | Productos: 950` |
+| Verificación | Resultado esperado |
+|---|---|
+| Backend activo | `curl localhost:8000/health` → `"status": "ok"` |
+| Modelo cargado | Logs de uvicorn: `Modelo listo. Clientes: 800 \| Productos: 950` |
+| Frontend activo | Abrir `http://localhost:8501` → pantalla de login |
+| Frontend conectado al backend | Al seleccionar un cliente, aparecen las recomendaciones |
 
 ### Señales de que algo está mal
 
@@ -254,11 +325,12 @@ conviene ajustar los pesos según la temporada o la situación del inventario.
 |---|---|---|
 | `404 Cliente no encontrado` | cliente_id inválido | Verificar formato `CLI_XXXXXX` |
 | `503 Modelo no disponible` | dataset_ml.csv no existe | Ejecutar notebook 01 primero |
+| Frontend muestra "Error al conectar" | Backend no está corriendo | Iniciar `python -m uvicorn api.main:app --port 8000` |
+| Streamlit muestra pantalla en blanco | Puerto 8501 ocupado | Usar `--server.port 8502` |
 | Urgency Coverage = 0 | No hay productos urgentes | Verificar que `dias_para_vencer` tiene valores ≤ 30 en el dataset |
 | Todos los endpoints devuelven [] | Problema con filtros de stock | Verificar que `stock > 0` en el maestro de productos |
-| Notebook 01 falla en join | Bug de sede cross-join | Verificar que el join usa la columna correcta (ver Sección 3 del notebook) |
 
-### Interpretar el log de arranque
+### Interpretar el log de arranque del backend
 
 ```
 INFO  api.main — Iniciando servidor — cargando modelo desde data/processed/dataset_ml.csv
@@ -278,7 +350,7 @@ INFO  api.main — Modelo listo.  Clientes: 800  |  Productos: 950
 
 ---
 
-## 6. Variables Configurables
+## 7. Variables Configurables
 
 Las siguientes constantes en `api/recommender.py` permiten ajustar el comportamiento
 sin reentrenar el modelo:
@@ -311,7 +383,7 @@ curl "http://localhost:8000/recomendar/proximos-vencer/CLI_000001?umbral_dias=7"
 
 ---
 
-## 7. Regenerar los Notebooks
+## 8. Regenerar los Notebooks
 
 Si necesitas cambiar el código del notebook 02 y regenerar el archivo `.ipynb`:
 
