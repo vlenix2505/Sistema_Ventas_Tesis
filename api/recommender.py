@@ -566,6 +566,108 @@ class HybridRecommender:
         return resultados
 
     # ──────────────────────────────────────────────────────────────────────────
+    # SERIALIZACIÓN
+    # ──────────────────────────────────────────────────────────────────────────
+
+    def save(self, path: str | Path) -> None:
+        """
+        Guarda el modelo entrenado en disco usando joblib.
+
+        Serializa todos los artefactos internos necesarios para servir
+        predicciones sin necesidad de re-entrenar. El archivo resultante
+        se carga con HybridRecommender.load().
+
+        Args:
+            path: Ruta destino del archivo .pkl (ej. data/processed/modelo_artifacts.pkl).
+
+        Raises:
+            RuntimeError: Si el modelo no ha sido entrenado aún.
+        """
+        import joblib
+
+        if not self.is_fitted:
+            raise RuntimeError("El modelo no ha sido entrenado. Llame a fit() antes de save().")
+
+        artifacts = {
+            "U":                  self._U,
+            "Vt":                 self._Vt,
+            "user_idx":           self._user_idx,
+            "item_idx":           self._item_idx,
+            "idx_item":           self._idx_item,
+            "cbf_sim":            self._cbf_sim,
+            "item_features":      self._item_features,
+            "vec_urgency":        self._vec_urgency,
+            "vec_novelty":        self._vec_novelty,
+            "vec_rotation":       self._vec_rotation,
+            "vec_vencido":        self._vec_vencido,
+            "stock_by_item":      self._stock_by_item,
+            "meta_by_item":       self._meta_by_item,
+            "historial_cliente":  self._historial_cliente,
+            "productos_df":       self._productos_df,
+            # Subconjunto del dataset original: solo columnas necesarias para metadata
+            "df_sede":            self._df[["cliente_id", "sede_cliente"]].drop_duplicates()
+                                  if self._df is not None else None,
+        }
+        joblib.dump(artifacts, path, compress=3)
+        logger.info("Modelo guardado en %s", path)
+
+    @classmethod
+    def load(cls, path: str | Path) -> "HybridRecommender":
+        """
+        Carga un modelo previamente entrenado desde disco.
+
+        No ejecuta fit() — todos los artefactos ya están calculados.
+        El servidor arranca en menos de 1 segundo en lugar de varios minutos.
+
+        Args:
+            path: Ruta al archivo .pkl generado por save() o por el notebook
+                  02_modelo_recomendacion.ipynb.
+
+        Returns:
+            Instancia de HybridRecommender lista para llamar a recommend().
+
+        Raises:
+            FileNotFoundError: Si el archivo no existe en la ruta indicada.
+        """
+        import joblib
+
+        path = Path(path)
+        if not path.exists():
+            raise FileNotFoundError(
+                f"No se encontró el modelo en '{path}'. "
+                "Ejecuta primero: python scripts/train.py"
+            )
+
+        logger.info("Cargando modelo desde %s ...", path)
+        a = joblib.load(path)
+
+        rec = cls()
+        rec._U                  = a["U"]
+        rec._Vt                 = a["Vt"]
+        rec._user_idx           = a["user_idx"]
+        rec._item_idx           = a["item_idx"]
+        rec._idx_item           = a["idx_item"]
+        rec._cbf_sim            = a["cbf_sim"]
+        rec._item_features      = a.get("item_features")
+        rec._vec_urgency        = a["vec_urgency"]
+        rec._vec_novelty        = a["vec_novelty"]
+        rec._vec_rotation       = a["vec_rotation"]
+        rec._vec_vencido        = a["vec_vencido"]
+        rec._stock_by_item      = a["stock_by_item"]
+        rec._meta_by_item       = a["meta_by_item"]
+        rec._historial_cliente  = a["historial_cliente"]
+        rec._productos_df       = a.get("productos_df")
+        # Reconstruir _df mínimo para compatibilidad con _get_sede_cliente
+        rec._df                 = a.get("df_sede")
+        rec.is_fitted           = True
+
+        logger.info(
+            "Modelo cargado.  Clientes: %d  |  Productos: %d",
+            rec.n_clientes, rec.n_productos,
+        )
+        return rec
+
+    # ──────────────────────────────────────────────────────────────────────────
     # PROPIEDADES / STATS
     # ──────────────────────────────────────────────────────────────────────────
 

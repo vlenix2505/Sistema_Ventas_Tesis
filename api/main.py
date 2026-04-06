@@ -71,23 +71,53 @@ DEFAULT_TOP_K = 10
 # El modelo se entrena UNA SOLA VEZ al arrancar el servidor y queda en memoria.
 # Esto garantiza latencia de inferencia < 100ms por request.
 
-recommender = HybridRecommender()
+MODEL_PATH = Path(os.getenv(
+    "MODEL_PATH",
+    str(ROOT_DIR / "data" / "processed" / "modelo_artifacts.pkl"),
+))
+
+recommender: HybridRecommender = HybridRecommender()
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Entrena el modelo al arrancar y libera recursos al cerrar."""
-    logger.info("Iniciando servidor — cargando modelo desde %s ...", DATASET_PATH)
-    try:
-        recommender.fit(DATASET_PATH)
-        logger.info("Modelo listo.  Clientes: %d  |  Productos: %d",
-                    recommender.n_clientes, recommender.n_productos)
-    except FileNotFoundError:
-        logger.error(
-            "No se encontró el dataset en %s. "
-            "Ejecuta primero el notebook 01_dataset.ipynb.",
-            DATASET_PATH,
+    """
+    Carga el modelo pre-entrenado al arrancar el servidor.
+
+    El modelo se entrena por separado ejecutando:
+        python scripts/train.py
+
+    Si el archivo .pkl no existe, se intenta entrenar en el momento como
+    fallback (útil en entornos de desarrollo por primera vez).
+    """
+    global recommender
+    if MODEL_PATH.exists():
+        logger.info("Cargando modelo pre-entrenado desde %s ...", MODEL_PATH)
+        try:
+            recommender = HybridRecommender.load(MODEL_PATH)
+            logger.info("Modelo listo.  Clientes: %d  |  Productos: %d",
+                        recommender.n_clientes, recommender.n_productos)
+        except Exception:
+            logger.exception("Error al cargar el modelo. Verifica el archivo .pkl.")
+    else:
+        logger.warning(
+            "No se encontró modelo pre-entrenado en %s. "
+            "Entrenando desde el dataset (esto puede tardar varios minutos)...",
+            MODEL_PATH,
         )
+        try:
+            recommender.fit(DATASET_PATH)
+            recommender.save(MODEL_PATH)
+            logger.info("Modelo entrenado y guardado.  "
+                        "Clientes: %d  |  Productos: %d",
+                        recommender.n_clientes, recommender.n_productos)
+        except FileNotFoundError:
+            logger.error(
+                "No se encontró el dataset en %s. "
+                "Ejecuta primero el notebook 01_dataset.ipynb y luego "
+                "python scripts/train.py",
+                DATASET_PATH,
+            )
     yield
     logger.info("Servidor detenido.")
 
