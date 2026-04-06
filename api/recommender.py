@@ -221,9 +221,12 @@ class HybridRecommender:
         self._idx_item = {j: p for p, j in self._item_idx.items()}
 
         # Guardar historial por cliente (productos que ya compró)
+        # Se usa lista ordenada en lugar de set para garantizar orden determinístico
+        # al convertir a lista en recommend(). Los set en Python tienen orden aleatorio
+        # entre procesos, lo que causaría score_cbf distinto en diferentes máquinas.
         self._historial_cliente = (
             matrix_df.groupby("cliente_id")["producto_id"]
-            .apply(set)
+            .apply(lambda x: sorted(set(x)))
             .to_dict()
         )
 
